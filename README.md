@@ -1,4 +1,4 @@
-# SingularitySurfer-FPGA-Lock-In-Amplifier
+# SingularitySurfer: An FPGA Lock-In Amplifier
 Repository for the development of an FPGA based DSP Lock-In Amplifier
 
 The Lattice ICE40Up5K FPGA will be used as the DSP platform and some additional hardware will be developed.
