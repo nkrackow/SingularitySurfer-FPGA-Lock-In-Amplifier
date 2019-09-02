@@ -9,9 +9,9 @@ module top (
   output wire mosi,
   output wire sck,
 
-  output wire [7:0] HC,
+  output wire [15:0] HC,
   output wire [3:0] HB,
-  output wire v,
+  input wire v,
   input wire [3:0] S,
 
   output R,
@@ -27,20 +27,21 @@ module top (
 
   wire wen,wen_w,busy,pulse_out1,pulse_out2;
 	wire[15:0] addr, wdata, addr_w, addr_r, dout,
-  sin, cos;
+  sin, cos,debug;
   wire [31:0] product;
+  wire [17:0] pllphase;
 
   // PLL vars
-  wire lock,clk,pllclk;
+  wire lock,clk,internalpllclk,islocked;
 
 
   // Assignments
 
-  assign clk= issimulation?  CLK12 : pllclk;    // if this gets synthed migh effect clk skew??
+  assign clk= issimulation?  CLK12 : internalpllclk;    // if this gets synthed migh effect clk skew??
 
-  assign {R,G,B}=~{loadlookup,lock,busy};
+  assign {R,G,B}=~{islocked,v};
 
-  assign HC=dout[15:8];
+  assign HC=debug;
 
   assign {HB[3],HB[0]}={pulse_out1,pulse_out2};
 
@@ -85,9 +86,7 @@ module top (
     // sram interface
       wen_w,
     	addr_w,
-    	wdata,
-
-      v
+    	wdata
 
     );
 
@@ -95,9 +94,9 @@ module top (
 
 dds dds_core(
     clk,
-    count[4],
+    count[2],
     //sweep,
-    {count,3'b0},
+    pllphase,
     sin,
     cos,
 
@@ -136,21 +135,118 @@ sigma_delta DAC2(
 		.RESETB(1'b1),
 		.BYPASS(1'b0),
 		.REFERENCECLK(CLK12),
-		.PLLOUTCORE(pllclk)
+		.PLLOUTCORE(internalpllclk)
 	);
 
 
-  mult16x16 mult(
+  // mult16x16 mult(
+  //   clk,
+  //   cos,
+  //   cos,
+  //   product
+  //   );
+
+  pll pll1(
     clk,
-    cos,
-    cos,
-    product
+    v,
+    pllphase,
+    islocked,
+    debug
     );
 
 
 
-
-
+//       parameter signed KD= 16'hffff;   // Loopfilter Differential Gain in s7.8 format
+//       parameter signed KP= 16'hffff;   // Loopfilter Proportional Gain in s7.8 format
+//
+//
+//     wire signed [15:0] eD,eP;     // Differential and Propotrional Error terms
+//     wire [31:0] KPout;           // Output of Proportional Gain mult
+//     wire [31:0] fullout;   // full 32 bit output wit KP and KD added up
+//
+//
+// assign {eD,eP}={0};
+//
+//
+//
+//         SB_MAC16 KP_mult
+//          ( // port interfaces
+//          .A(KP),
+//          .B(eP),
+//          .C(0),
+//          .D(0),
+//          .O(KPout),
+//          .CLK(clk),
+//          .CE(1'b1),
+//          .IRSTTOP(0),
+//          .IRSTBOT(0),
+//          .ORSTTOP(0),
+//          .ORSTBOT(0),
+//          .AHOLD(0),
+//          .BHOLD(0),
+//          .CHOLD(0),
+//          .DHOLD(0),
+//          .OHOLDTOP(0),
+//          .OHOLDBOT(0),
+//          .OLOADTOP(0),
+//          .OLOADBOT(0),
+//          .ADDSUBTOP(0),
+//          .ADDSUBBOT(0),
+//          .CO(),
+//          .CI(),
+//          .ACCUMCI(),
+//          .ACCUMCO(),
+//          .SIGNEXTIN(),
+//          .SIGNEXTOUT()
+//         );
+//         defparam KP_mult.TOPOUTPUT_SELECT = 2'b11; //Mult16x16 data output
+//         defparam KP_mult.BOTOUTPUT_SELECT = 2'b11;
+//         defparam KP_mult.PIPELINE_16x16_MULT_REG2 = 1'b1;//Mult16x16 output registered
+//         defparam KP_mult.A_SIGNED = 1'b1; //Signed Inputs
+//         defparam KP_mult.B_SIGNED = 1'b1;
+//
+//
+//         SB_MAC16 KD_mult_and_acc
+//          ( // port interfaces
+//          .A(KD),
+//          .B(eD),
+//          .C(KPout[31:16]),    //upper 16 KPout bits
+//          .D(KPout[15:0]),     // lower 16
+//          .O(fullout),
+//          .CLK(clk),
+//          .CE(1'b1),
+//          .IRSTTOP(0),
+//          .IRSTBOT(0),
+//          .ORSTTOP(0),
+//          .ORSTBOT(0),
+//          .AHOLD(0),
+//          .BHOLD(0),
+//          .CHOLD(0),
+//          .DHOLD(0),
+//          .OHOLDTOP(0),
+//          .OHOLDBOT(0),
+//          .OLOADTOP(0),
+//          .OLOADBOT(0),
+//          .ADDSUBTOP(0),
+//          .ADDSUBBOT(0),
+//          .CO(),
+//          .CI(),
+//          .ACCUMCI(),
+//          .ACCUMCO(),
+//          .SIGNEXTIN(),
+//          .SIGNEXTOUT()
+//         );
+//         defparam KD_mult_and_acc.TOPOUTPUT_SELECT = 2'b00; // adder output
+//         defparam KD_mult_and_acc.BOTOUTPUT_SELECT = 2'b00;  // adder output
+//         defparam KD_mult_and_acc.TOPADDSUB_CARRYSELECT = 2'b10; // use carry bit from lower adder
+//         defparam KD_mult_and_acc.TOPADDSUB_LOWERINPUT = 2'b10;  // use 16x16 as adder input
+//         defparam KD_mult_and_acc.BOTADDSUB_LOWERINPUT = 2'b10;  // use 16x16 as adder input
+//         defparam KD_mult_and_acc.BOTADDSUB_UPPERINPUT = 1'b1;   // use input D for lower adder
+//         defparam KD_mult_and_acc.TOPADDSUB_UPPERINPUT = 1'b1;   // use input C for lower adder
+//         defparam KD_mult_and_acc.PIPELINE_16x16_MULT_REG2 = 1'b1;//Mult16x16 output registered
+//         defparam KD_mult_and_acc.A_SIGNED = 1'b1; //Signed Inputs
+//         defparam KD_mult_and_acc.B_SIGNED = 1'b1;
+//
 
 
 

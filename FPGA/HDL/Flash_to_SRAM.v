@@ -18,10 +18,8 @@ module Flash_to_SRAM (
 // sram interface
   output reg  wen=0,
 	output reg [15:0] addr=0,
-	output reg [15:0] wdata=0,
+	output reg [15:0] wdata=0
 
-// debug
-  output wire d
 
 );
 
@@ -41,7 +39,6 @@ module Flash_to_SRAM (
   wire[7:0] spi_data;
   wire spi_valid;
 
-  assign d=spi_valid;
 
   always @ (posedge clk) begin
     // resets are for loosers :p
