@@ -1913,6 +1913,6 @@ found and reported 0 problems.
 
 Warnings: 20 unique messages, 20 total
 End of script. Logfile hash: 201311fa59
-CPU: user 1.45s system 0.06s, MEM: 74.93 MB total, 42.82 MB resident
+CPU: user 2.30s system 0.06s, MEM: 74.93 MB total, 42.92 MB resident
 Yosys 0.8+612 (git sha1 c6d8692c, clang 6.0.0-1ubuntu2 -fPIC -Os)
-Time spent: 18% 21x opt_clean (0 sec), 14% 20x opt_expr (0 sec), ...
+Time spent: 21% 21x opt_clean (0 sec), 16% 20x opt_expr (0 sec), ...

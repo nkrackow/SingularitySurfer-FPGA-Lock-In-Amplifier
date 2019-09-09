@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AD8675
+D Operational Amplifier
+K single opamp
+F http://www.ti.com/lit/ds/symlink/lm741.pdf
+$ENDCMP
+#
+$CMP AP2114
+D 1A Low Dropout regulator, positive, 1.5V fixed output, TO-252
+K linear regulator ldo fixed positive
+F http://www.advanced-monolithic.com/pdf/ds1117.pdf
+$ENDCMP
+#
+$CMP AP2114-1.8
+D LDO
+K linear regulator ldo fixed positive
+F http://www.advanced-monolithic.com/pdf/ds1117.pdf
+$ENDCMP
+#
+#End Doc Library

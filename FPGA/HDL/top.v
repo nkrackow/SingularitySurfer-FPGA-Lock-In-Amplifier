@@ -96,7 +96,7 @@ dds dds_core(
     clk,
     count[2],
     //sweep,
-    pllphase,
+    {pllphase},
     sin,
     cos,
 

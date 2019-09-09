@@ -44,7 +44,7 @@ always @ ( posedge clk ) begin
   //debug<=phase[23:8];
   if(!l2_in&&l_in) begin    //the edgesense has to be double registered!!! otherwise gliches occure!
     last_eP<=eP;
-    phase<=32'h00000000;    // reset phase
+    phase<=32'h00000000;    // reset multiple of 2pi
     incr<=incr-$signed(eP[15:9])+$signed(eD[15:11]); // proportional and derivative loop gain set by adding higher or lower bits to phase increment
     //debug<=eD;
   end
