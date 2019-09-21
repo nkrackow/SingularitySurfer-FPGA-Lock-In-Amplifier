@@ -27,14 +27,14 @@ module Flash_to_SRAM (
 
 
 // core vars
-  reg[15:0] poscount=0;
+  reg[16:0] poscount=0;
   reg laststart=0, second=0;
   reg[7:0] f_byte;
 
 // SPI vars
   reg[23:0] spi_addr=0;
   reg[16:0] spi_len=17'h1ffff;
-  reg spi_go=0;
+  reg spi_go=0,busystop=0;
   wire spi_rdy;
   wire[7:0] spi_data;
   wire spi_valid;
@@ -49,6 +49,7 @@ module Flash_to_SRAM (
 
     if(start&&!laststart&&!busy)begin
       busy<=1;
+      busystop<=1;
       poscount<=0;
       spi_addr<=base_addr;
       spi_go<=1;
@@ -57,7 +58,7 @@ module Flash_to_SRAM (
 
 
     if(busy)begin
-      if(&poscount) busy<=0;// done
+      if(poscount==17'h10000) busy<=0;// done
       if(spi_valid)begin    // if new data
         f_byte<=spi_data;   // if in first byte save byte
         second<=1;
@@ -68,6 +69,7 @@ module Flash_to_SRAM (
           addr<=addr+1;
           second<=0;
           poscount<=poscount+1;
+          busy<=busystop;
         end
       end
     end

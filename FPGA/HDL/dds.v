@@ -8,11 +8,11 @@ module dds (
   input clk,
   input go,
   input[17:0] phase,
-  output reg [15:0] sin,
-  output reg [15:0] cos,
+  output reg [15:0] sin=0,
+  output reg [15:0] cos=0,
 
   //sram interface
-  output reg [15:0] addr,
+  output reg [15:0] addr=0,
   input[15:0] data
   );
 

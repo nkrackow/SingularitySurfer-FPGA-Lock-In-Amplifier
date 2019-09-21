@@ -1,0 +1,37 @@
+set_io CLK12 37   # Bridged from pin 35!!! pnr fails with 35 as input to PLL
+
+
+# RGB LED
+set_io R 41
+set_io G 40
+set_io B 39
+
+# Header C outside +v inside
+
+set_io sMISO 47
+set_io sMOSI 44
+set_io sSCLK 46
+set_io sCS 2
+
+
+
+# ADC interfaces
+
+set_io SDI 23         #37A
+set_io SCLK 26        #39A
+set_io SDO 25         #36B
+set_io CONVST 36      #48B
+set_io GAIN_A1 38     #50B
+set_io GAIN_A0 31     #42B
+
+
+
+# Switches
+set_io S[0] 43
+set_io S[1] 34
+
+# SPI flash
+set_io ss   16
+set_io miso 17
+set_io mosi 14
+set_io sck  15

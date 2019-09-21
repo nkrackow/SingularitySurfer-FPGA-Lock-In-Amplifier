@@ -41,7 +41,7 @@ module top (
 
   assign {R,G,B}=~{islocked,v};
 
-  assign HC=debug;
+  assign HC={~cos[15],cos[14:0]};
 
   assign {HB[3],HB[0]}={pulse_out1,pulse_out2};
 
@@ -96,7 +96,8 @@ dds dds_core(
     clk,
     count[2],
     //sweep,
-    {pllphase},
+    //{pllphase},
+    {count[11:0],6'b0},
     sin,
     cos,
 

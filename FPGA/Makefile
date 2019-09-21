@@ -1,9 +1,9 @@
 
 
-sine: sinegen.py
+sine_np2.bin: sinegen.py
 	python $^
 
-progsine: sine_np2.bin
+sineprog: sine_np2.bin
 	iceprog -o 1M $^
 
 clean:
