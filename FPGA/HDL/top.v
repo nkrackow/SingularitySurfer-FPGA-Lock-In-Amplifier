@@ -35,6 +35,7 @@ module top (
   wire lock,clk,internalpllclk,islocked;
 
 
+
   // Assignments
 
   assign clk= issimulation?  CLK12 : internalpllclk;    // if this gets synthed migh effect clk skew??
@@ -97,7 +98,8 @@ dds dds_core(
     count[2],
     //sweep,
     //{pllphase},
-    {count[11:0],6'b0},
+    //{count[11:0],6'b0},
+    count[17:0],
     sin,
     cos,
 
@@ -127,10 +129,10 @@ sigma_delta DAC2(
   SB_PLL40_CORE #(
 		.FEEDBACK_PATH("SIMPLE"),
 		.PLLOUT_SELECT("GENCLK"),
-		.DIVR(4'b0000),
-		.DIVF(7'b1001111),
-		.DIVQ(3'b111),
-		.FILTER_RANGE(3'b001)
+    .DIVR(4'b0000),
+    .DIVF(7'b1001111),
+    .DIVQ(3'b101),
+    .FILTER_RANGE(3'b001)
 	) PLL (
 		.LOCK(lock),
 		.RESETB(1'b1),

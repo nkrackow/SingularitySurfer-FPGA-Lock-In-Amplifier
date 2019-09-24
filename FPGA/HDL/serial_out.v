@@ -22,7 +22,7 @@ module serial_out (
     last_last_sclk<=last_sclk;
     if(!last_last_sclk&&last_sclk)begin
       miso<=data[dcount];
-      dcount<=dcount-1;   //overflows at 15
+      dcount<=dcount-1;   //underflows
       if(dcount==0) addr<=addr+1;      //overflows at 65536 (2^16)
       if(dcount==15) miso<=data[dcount];
     end

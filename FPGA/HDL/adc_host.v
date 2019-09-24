@@ -24,6 +24,7 @@ assign SCLK= (acq&&enable)? clk : 0;
 always @ ( posedge clk ) begin
   newdata<=0;
   if(enable) count<=count+1;
+  else count<=0;
   if(count==10) CONVST<=0;    // when at 200ns
   if(count==23) acq<=1;       // when at 720ns
   if(count==39) begin         // after 17 more clockcycles

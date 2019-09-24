@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name SingularitySurfer_Logo)(type KiCad)(uri /home/norman/SingularitySurfer/BOARD/SingularitySurfer_Logo.pretty)(options "")(descr ""))
+)

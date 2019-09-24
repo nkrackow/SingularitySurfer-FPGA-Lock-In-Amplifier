@@ -30,7 +30,7 @@ module top_sampling (
 
 
   reg[31:0] count=0;
-  reg rst=0,loadlookup=0,ramfull=0,holdoff=1,lastdone=0;
+  reg rst=0,loadlookup=0,ramfull=0,holdoff=1,lastdone=0,fdatholdoff=1;
 
   wire wen,wen_w,busy,adcen,newdata;
 	wire[15:0] addr, wdata, addr_w, addr_r, dout, adcdata;
@@ -64,8 +64,10 @@ module top_sampling (
 
     if(done&&!ramfull) adcen<=1;
 
+    if(newdata) fdatholdoff<=0;
+
     wen_w<=0;
-    if(newdata) begin
+    if(newdata&&!fdatholdoff) begin
       holdoff<=0;
       addr_adc<=addr_adc+1;
       wen_w<=1;
@@ -78,7 +80,10 @@ module top_sampling (
 
 
     lastdone<=done;
-    if(!lastdone&&done) ramfull<=0;
+    if(!lastdone&&done) begin
+      ramfull<=0;
+      fdatholdoff<=1;
+    end
 
 
   end
