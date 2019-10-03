@@ -167,7 +167,7 @@ F 3 "~" H 1950 2100 50  0001 C CNN
 $EndComp
 NoConn ~ 3500 3600
 Text GLabel 3200 3300 1    50   Input ~ 0
-+15V
++8V
 Wire Wire Line
 	2600 3700 2700 3700
 $Comp
@@ -401,9 +401,9 @@ F 3 "~" H 6700 4350 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Text GLabel 5900 2900 1    50   Input ~ 0
-+15V
++8V
 Text GLabel 5900 3500 3    50   Input ~ 0
--15V
+-8V
 Wire Wire Line
 	5800 3500 5700 3500
 Wire Wire Line

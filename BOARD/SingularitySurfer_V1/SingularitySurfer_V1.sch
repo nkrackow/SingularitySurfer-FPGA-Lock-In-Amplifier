@@ -32,7 +32,7 @@ U 1 1 5D8BB390
 P 3750 5250
 F 0 "U5" H 3693 3983 50  0000 C CNN
 F 1 "ICE40UP5K-SG48ITR" H 3693 4074 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 3750 3900 50  0001 C CNN
+F 2 "SingularitySurfer:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 3750 3900 50  0001 C CNN
 F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 3350 6250 50  0001 C CNN
 	1    3750 5250
 	-1   0    0    1   
@@ -43,7 +43,7 @@ U 2 1 5D8BEB8D
 P 2750 3400
 F 0 "U5" H 2750 2325 50  0000 C CNN
 F 1 "ICE40UP5K-SG48ITR" H 2750 2234 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 2750 2050 50  0001 C CNN
+F 2 "SingularitySurfer:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 2750 2050 50  0001 C CNN
 F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 2350 4400 50  0001 C CNN
 	2    2750 3400
 	1    0    0    -1  
@@ -54,7 +54,7 @@ U 3 1 5D8C0353
 P 3750 3000
 F 0 "U5" H 3693 2233 50  0000 C CNN
 F 1 "ICE40UP5K-SG48ITR" H 3693 2324 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 3750 1650 50  0001 C CNN
+F 2 "SingularitySurfer:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 3750 1650 50  0001 C CNN
 F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 3350 4000 50  0001 C CNN
 	3    3750 3000
 	-1   0    0    1   
@@ -69,7 +69,7 @@ U 4 1 5D8E203A
 P 1550 6900
 F 0 "U5" H 950 6800 50  0000 L CNN
 F 1 "ICE40UP5K-SG48ITR" H 500 6600 50  0000 L CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 1550 5550 50  0001 C CNN
+F 2 "SingularitySurfer:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 1550 5550 50  0001 C CNN
 F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 1150 7900 50  0001 C CNN
 	4    1550 6900
 	1    0    0    -1  
@@ -200,10 +200,10 @@ F 3 "~" H 6600 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SET1001
+L Switch:SW_Push SET1
 U 1 1 5D91CE17
 P 6600 950
-F 0 "SET1001" H 6600 850 50  0000 C CNN
+F 0 "SET1" H 6600 850 50  0000 C CNN
 F 1 "SW_Push" H 6600 900 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH-12mm" H 6600 1150 50  0001 C CNN
 F 3 "~" H 6600 1150 50  0001 C CNN
@@ -418,7 +418,7 @@ U 1 1 5D9838A7
 P 900 5550
 F 0 "J2" H 1008 5831 50  0000 C CNN
 F 1 "Conn_01x04_Male" H 1008 5740 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical" H 900 5550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 900 5550 50  0001 C CNN
 F 3 "~" H 900 5550 50  0001 C CNN
 	1    900  5550
 	1    0    0    -1  
@@ -563,8 +563,6 @@ Wire Wire Line
 	5400 5300 5400 5750
 Wire Wire Line
 	5400 5300 7600 5300
-Text GLabel 8950 6000 3    50   Input ~ 0
-5V
 Wire Wire Line
 	8950 6000 8950 5800
 $Comp
@@ -1112,7 +1110,7 @@ U 1 1 5DE34096
 P 700 2950
 F 0 "J7" H 618 2125 50  0000 C CNN
 F 1 "Conn_01x12" H 618 2216 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x12_P1.27mm_Vertical" H 700 2950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 700 2950 50  0001 C CNN
 F 3 "~" H 700 2950 50  0001 C CNN
 	1    700  2950
 	-1   0    0    1   
@@ -1244,7 +1242,7 @@ U 1 1 5E175D66
 P 6950 5900
 F 0 "J8" H 6922 5782 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 6922 5873 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 6950 5900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6950 5900 50  0001 C CNN
 F 3 "~" H 6950 5900 50  0001 C CNN
 	1    6950 5900
 	-1   0    0    1   
@@ -1479,9 +1477,9 @@ Wire Wire Line
 Wire Wire Line
 	7750 1900 7650 1900
 Wire Wire Line
-	9550 3500 10350 3500
+	9550 3500 10050 3500
 Wire Wire Line
-	9800 2300 10350 2300
+	9800 2300 10250 2300
 $Comp
 L Device:D_Schottky_x2_Serial_AKC D10
 U 1 1 5D99FB1C
@@ -1627,4 +1625,18 @@ Wire Wire Line
 Connection ~ 2050 5150
 Wire Wire Line
 	2050 5150 2050 5650
+Wire Wire Line
+	6450 5700 5900 5700
+Wire Wire Line
+	5900 5700 5900 5850
+Connection ~ 6450 5700
+Text GLabel 8950 6000 3    50   Input ~ 0
+3V3
+Connection ~ 10050 4500
+Connection ~ 10050 3500
+Wire Wire Line
+	10050 3500 10350 3500
+Connection ~ 10250 2300
+Wire Wire Line
+	10250 2300 10350 2300
 $EndSCHEMATC

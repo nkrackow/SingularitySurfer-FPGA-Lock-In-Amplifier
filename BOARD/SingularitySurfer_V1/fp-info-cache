@@ -1,4 +1,4 @@
-16313039384034833
+16317747449992833
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -66772,6 +66772,27 @@ LEM Hall Effect Voltage transducer
 0
 5
 5
+SingularitySurfer
+DFN-14-1EP_split_bottom_pad_3x4mm_P0.5mm_EP1.7x3.3mm
+DE Package; 14-Lead Plastic DFN (4mm x 3mm) (see Linear Technology DFN_14_05-08-1708.pdf)
+DFN 0.5
+0
+14
+14
+SingularitySurfer
+QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm
+QFN, 48 Pin (http://www.st.com/resource/en/datasheet/stm32f042k6.pdf#page=94), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+53
+49
+SingularitySurfer
+SOT-223
+module CMS SOT223 4 pins
+CMS SOT
+0
+4
+4
 SingularitySurfer_Logo
 SingularitySurfer_Logo
 
