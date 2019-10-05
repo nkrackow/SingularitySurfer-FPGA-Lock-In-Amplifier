@@ -1570,10 +1570,6 @@ Wire Wire Line
 	10800 2000 10800 2100
 Wire Wire Line
 	10800 2100 10550 2100
-Text GLabel 2450 6500 1    50   Input ~ 0
-+8V
-Text GLabel 2450 7100 3    50   Input ~ 0
--8V
 Connection ~ 10050 5700
 Wire Wire Line
 	9250 5700 10050 5700
@@ -1639,4 +1635,25 @@ Wire Wire Line
 Connection ~ 10250 2300
 Wire Wire Line
 	10250 2300 10350 2300
+NoConn ~ 5500 6550
+NoConn ~ 5500 6650
+NoConn ~ 5500 6750
+NoConn ~ 5500 6850
+$Comp
+L power:GND #PWR0164
+U 1 1 5D9CB423
+P 5900 7450
+F 0 "#PWR0164" H 5900 7200 50  0001 C CNN
+F 1 "GND" H 5905 7277 50  0000 C CNN
+F 2 "" H 5900 7450 50  0001 C CNN
+F 3 "" H 5900 7450 50  0001 C CNN
+	1    5900 7450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1700 4600
+NoConn ~ 1700 4700
+Text GLabel 2450 6500 1    50   Input ~ 0
++8V
+Text GLabel 2450 7100 3    50   Input ~ 0
+-8V
 $EndSCHEMATC

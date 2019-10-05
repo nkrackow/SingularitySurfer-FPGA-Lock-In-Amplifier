@@ -432,8 +432,6 @@ Connection ~ 7000 2700
 Wire Wire Line
 	7000 2700 7000 3400
 Wire Wire Line
-	7500 2900 7400 2900
-Wire Wire Line
 	7400 2900 7400 2700
 Connection ~ 7400 2700
 Wire Wire Line
@@ -904,8 +902,6 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3032ff.
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 2500 6650 5150
-Wire Wire Line
 	1150 2900 1150 5250
 Wire Wire Line
 	1150 5250 1650 5250
@@ -920,10 +916,6 @@ Wire Wire Line
 	1650 5250 1800 5250
 Text Label 1150 5250 0    50   ~ 0
 VPOS
-Text GLabel 6350 5350 0    50   Input ~ 0
-VPOS
-Wire Wire Line
-	6350 5350 6650 5350
 $Comp
 L power:GND #PWR0151
 U 1 1 5DA82256
@@ -1731,4 +1723,18 @@ Wire Wire Line
 Wire Wire Line
 	10450 3000 10750 3000
 Connection ~ 10450 3000
+Wire Wire Line
+	6650 2500 6650 5150
+Wire Wire Line
+	6650 5350 6650 6000
+Wire Wire Line
+	6650 6000 1150 6000
+Wire Wire Line
+	1150 6000 1150 5250
+Connection ~ 1150 5250
+NoConn ~ 1800 1800
+NoConn ~ 1800 1900
+NoConn ~ 1800 2000
+Wire Wire Line
+	7400 2900 7550 2900
 $EndSCHEMATC

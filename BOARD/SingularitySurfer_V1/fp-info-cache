@@ -1,4 +1,4 @@
-16317747449992833
+16317747450287833
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -66784,7 +66784,7 @@ QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm
 QFN, 48 Pin (http://www.st.com/resource/en/datasheet/stm32f042k6.pdf#page=94), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
 QFN DFN_QFN
 0
-53
+54
 49
 SingularitySurfer
 SOT-223
