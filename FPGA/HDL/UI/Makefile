@@ -6,6 +6,7 @@ synth.bin: top.v sram16x16.v Flash_to_SRAM.v spi_flash_reader.v sigma_delta.v dd
 	nextpnr-ice40 --freq 30 --up5k --asc pnrout.asc --pcf evn.pcf --json yosysout.json
 	icepack pnrout.asc synth.bin
 
+
 prog: synth.bin
 	iceprog $^
 
@@ -35,3 +36,23 @@ lcdsynth.bin: lcd_top.v lcd_defines.v lcd_display.v delay_counter.v
 
 lcdprog: lcdsynth.bin
 	iceprog $^
+
+UIsynth.bin: top_UI.v UI.v BinToLCD.v lcd_defines.v lcd_display.v delay_counter.v
+		yosys -l yosyslog.log -p 'synth_ice40 -top top_UI -json yosysout_UI.json' $^
+		nextpnr-ice40 --freq 12 --up5k --asc pnrout_UI.asc --pcf lcdtest.pcf --json yosysout_UI.json
+		icepack pnrout_UI.asc UIsynth.bin
+
+UIsynth_pnrgui: top_UI.v UI.v BinToLCD.v lcd_defines.v lcd_display.v delay_counter.v
+		yosys -l yosyslog.log -p 'synth_ice40 -top top_UI -json yosysout_UI.json' $^
+		nextpnr-ice40 --freq 12 --up5k --asc pnrout_UI.asc --pcf lcdtest.pcf --json yosysout_UI.json --gui
+		icepack pnrout_UI.asc UIsynth.bin
+
+UIprog: UIsynth.bin
+	iceprog $^
+
+UIsim: top_UI_tb.vvp
+	vvp -N $< +vcd +trace +noerror
+	gtkwave out.vcd
+
+top_UI_tb.vvp: top_UI_tb.v top_UI.v UI.v BinToLCD.v lcd_defines.v lcd_display.v delay_counter.v
+	iverilog -s top_UI_tb -o $@ $^ `yosys-config --datdir/ice40/cells_sim.v`

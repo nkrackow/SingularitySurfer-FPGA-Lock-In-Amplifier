@@ -49,15 +49,14 @@ module lcd (
 	input reset,
 
 	input [`DAT_WIDTH-1:0] dat,
-	input [`ADDR_WIDTH-1:0] addr,
+	input [4:0] addr,
 	input we,
 
 	input  repaint,
 	output busy,
 	output [3:0] SF_D,
 	output LCD_E,
-	output LCD_RS,
-	output LCD_RW
+	output LCD_RS
 	);
 
 //
@@ -116,11 +115,14 @@ integer pos = `MEM_LOW1; // current drawing position
 
 // ICE40 4kb ram
 wire [7:0] ramdat;
+wire [7:0] ramaddr;
+
+assign ramaddr= addr[4]?	{4'h4,addr[3:0]} : {4'h0,addr[3:0]};
 
 SB_RAM40_4K ram40_4kinst_physical (
 .RDATA(ramdat),
 .RADDR(pos),
-.WADDR(addr),
+.WADDR(ramaddr),
 .MASK(16'h0000),
 .WDATA(dat),
 .RCLKE(1),
@@ -175,7 +177,6 @@ assign SF_D = (output_selector == 1'b1) ?	SF_D0 : //transmit
 assign LCD_E = (output_selector == 1'b1) ?	LCD_E0 ://transmit
 						LCD_E1; //initialize
 
-assign LCD_RW = 1'b0; // write only
 
 //when to transmit a command/data and when not to
 assign tx_init = !tx_done & display_state[4] & display_state[3];

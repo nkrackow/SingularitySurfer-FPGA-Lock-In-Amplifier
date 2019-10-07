@@ -21,7 +21,7 @@ assign LCD_RW=0;
 
 wire repaint,we=1,busy,dummy;
 reg [31:0] count=0;
-reg [6:0] addr=0;
+reg [4:0] addr=0;
 reg [7:0] dat=0,pos=0;
 reg reset=1;
 
@@ -38,11 +38,11 @@ always@(posedge CLK12)begin
 
   if(count>=100) reset<=0;
   if(&count[20:0]) pos<=pos+1;
-  if(pos==15) pos<=60;
-  if(pos==80) pos<=0;
+//  if(pos==15) pos<=60;
+  if(pos==32) pos<=0;
 
   addr<=addr+1;
-  dat<=0;
+  dat<=8'b00100001;
   if(addr==pos) dat<=8'b01001000;
   if(addr==pos+1) dat<=8'b01001001;
 
@@ -63,8 +63,7 @@ lcd LCD(
   busy,
 	SF_D,
 	LCD_E,
-	LCD_RS,
-	dummy
+	LCD_RS
   );
 
 

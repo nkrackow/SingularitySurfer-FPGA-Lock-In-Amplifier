@@ -1,0 +1,74 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Mon Oct  7 18:41:11 2019
+[*]
+[dumpfile] "/home/norman/SingularitySurfer/FPGA/HDL/UI/out.vcd"
+[dumpfile_mtime] "Mon Oct  7 18:40:04 2019"
+[dumpfile_size] 397064
+[savefile] "/home/norman/SingularitySurfer/FPGA/HDL/UI/numberToLCD.gtkw"
+[timestart] 0
+[size] 2493 1363
+[pos] -84 -84
+*-19.985157 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top_UI_tb.
+[treeopen] top_UI_tb.topUIinst.
+[treeopen] top_UI_tb.topUIinst.UI_inst.
+[sst_width] 323
+[signals_width] 186
+[sst_expanded] 1
+[sst_vpaned_height] 395
+@22
+top_UI_tb.topUIinst.UI_inst.Ang[31:0]
+top_UI_tb.topUIinst.UI_inst.BP[3:0]
+top_UI_tb.topUIinst.UI_inst.Button[3:0]
+@28
+top_UI_tb.topUIinst.UI_inst.LCD_E
+top_UI_tb.topUIinst.UI_inst.LCD_RS
+@22
+top_UI_tb.topUIinst.UI_inst.Rad[31:0]
+top_UI_tb.topUIinst.UI_inst.SF_D[3:0]
+top_UI_tb.topUIinst.UI_inst.TC[3:0]
+top_UI_tb.topUIinst.UI_inst.X[31:0]
+top_UI_tb.topUIinst.UI_inst.Y[31:0]
+@28
+top_UI_tb.topUIinst.UI_inst.addrBTL
+@22
+top_UI_tb.topUIinst.UI_inst.addrS[4:0]
+top_UI_tb.topUIinst.UI_inst.addr[4:0]
+@28
+top_UI_tb.topUIinst.UI_inst.btnt0
+top_UI_tb.topUIinst.UI_inst.btnt1
+top_UI_tb.topUIinst.UI_inst.btnt2
+top_UI_tb.topUIinst.UI_inst.btnt3
+top_UI_tb.topUIinst.UI_inst.busy
+top_UI_tb.topUIinst.UI_inst.clk
+@22
+top_UI_tb.topUIinst.UI_inst.cnt0[18:0]
+top_UI_tb.topUIinst.UI_inst.cnt1[18:0]
+top_UI_tb.topUIinst.UI_inst.cnt2[18:0]
+top_UI_tb.topUIinst.UI_inst.cnt3[18:0]
+top_UI_tb.topUIinst.UI_inst.count[31:0]
+@28
+top_UI_tb.topUIinst.UI_inst.datBTL
+@22
+top_UI_tb.topUIinst.UI_inst.datS[7:0]
+top_UI_tb.topUIinst.UI_inst.dat[7:0]
+@28
+top_UI_tb.topUIinst.UI_inst.gain[1:0]
+top_UI_tb.topUIinst.UI_inst.ismagphase
+@22
+top_UI_tb.topUIinst.UI_inst.number1[31:0]
+@28
+top_UI_tb.topUIinst.UI_inst.refIO
+top_UI_tb.topUIinst.UI_inst.refampl[1:0]
+top_UI_tb.topUIinst.UI_inst.reffreq[2:0]
+top_UI_tb.topUIinst.UI_inst.reset
+@22
+top_UI_tb.topUIinst.UI_inst.state[3:0]
+@28
+top_UI_tb.topUIinst.UI_inst.update
+top_UI_tb.topUIinst.UI_inst.we
+top_UI_tb.topUIinst.UI_inst.weBTL
+top_UI_tb.topUIinst.UI_inst.weS
+[pattern_trace] 1
+[pattern_trace] 0
