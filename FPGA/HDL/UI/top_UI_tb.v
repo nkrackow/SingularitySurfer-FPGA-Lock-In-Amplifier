@@ -37,6 +37,10 @@ initial begin
   $dumpvars(0, top_UI_tb);
   #10
   Button[0]<=1;
+  #10
+  Button[0]<=0;
+  #3000
+  Button[0]<=1;
   #10000
   $display("hallu world");
   $finish;

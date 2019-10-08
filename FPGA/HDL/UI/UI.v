@@ -21,7 +21,9 @@ module UI (
   output reg [3:0] TC=0,
   output reg [2:0] reffreq=0,
   output reg [1:0] refampl=0,
-  output reg refIO=0
+  output reg refIO=0,
+
+  output wire [3:0] debug
 
   );
 
@@ -30,6 +32,9 @@ module UI (
   wire[7:0] dat;
   wire[4:0] addr;
   wire we,repaint;
+  wire[7:0] datBTL;
+  wire[4:0] addrBTL;
+  wire weBTL;
 
   // basics
   reg [31:0] count=0,number1=32'hfffffff0;
@@ -38,9 +43,11 @@ module UI (
 
   assign update=&count[21:0];
 
+  assign debug=state;
+
   // debouncing vars
   reg[3:0] BP=0;
-  reg[1:0] cnt0=0,cnt1=0,cnt2=0,cnt3=0;
+  reg[21:0] cnt0=0,cnt1=0,cnt2=0,cnt3=0;
   reg btnt0=0,btnt1=0,btnt2=0,btnt3=0;
 
   // statemachine
@@ -57,8 +64,9 @@ module UI (
   //substate logic
   reg ismagphase=0;
   reg[7:0] datS=0;
-  reg weS=0, repaintS;
+  reg weS=0, repaintS=0;
   reg [4:0] disppos=0;
+  reg dispdone=0;
   wire [4:0] addrS;
 
 
@@ -66,7 +74,10 @@ module UI (
 
 
   always @ ( posedge clk ) begin
-    BP=4'b0000;
+    BP[0]<=0;
+    BP[1]<=0;
+    BP[2]<=0;
+    BP[3]<=0;
     if(btnt0) begin
       cnt0<=cnt0+1;
       if(&cnt0) btnt0<=0;
@@ -74,6 +85,7 @@ module UI (
     if(Button[0]&&!btnt0)begin
       BP[0]<=1;
       btnt0<=1;
+      cnt0<=0;
     end
 
     if(btnt1) begin
@@ -83,6 +95,7 @@ module UI (
     if(Button[1]&&!btnt1)begin
       BP[1]<=1;
       btnt1<=1;
+      cnt1<=0;
     end
 
     if(btnt2) begin
@@ -92,6 +105,7 @@ module UI (
     if(Button[2]&&!btnt2)begin
       BP[2]<=1;
       btnt2<=1;
+      cnt2<=0;
     end
 
     if(btnt3) begin
@@ -101,6 +115,7 @@ module UI (
     if(Button[3]&&!btnt3)begin
       BP[3]<=1;
       btnt3<=1;
+      cnt3<=0;
     end
   end
 
@@ -119,13 +134,25 @@ module UI (
 
 
     repaintS<=0;
+    weS<=0;
 
-    if(state!=disp&&!(&disppos)) disppos<=disppos+1;
+    if(&disppos) dispdone<=1;
+    if(state!=disp&&!dispdone)begin
+      disppos<=disppos+1;
+      weS<=1;
+    end
+
+
+    state<=state;
 
     case (state)
       disp: begin
         case (BP)
-          4'b0001: state<=setTC;
+          4'b0001: begin
+            state<=setTC;
+            repaintS<=1;
+            dispdone<=0;
+          end
           4'b0010: ismagphase<=!ismagphase;
         endcase
       end
@@ -181,6 +208,7 @@ module UI (
         if(|BP)begin
           disppos<=0;
           repaintS<=1;
+          dispdone<=0;
         end
 
       end
@@ -219,6 +247,7 @@ module UI (
         if(|BP)begin
           disppos<=0;
           repaintS<=1;
+          dispdone<=0;
         end
       end
 
@@ -264,6 +293,7 @@ module UI (
         if(|BP)begin
           disppos<=0;
           repaintS<=1;
+          dispdone<=0;
         end
       end
 
@@ -300,6 +330,7 @@ module UI (
         if(|BP)begin
           disppos<=0;
           repaintS<=1;
+          dispdone<=0;
         end
       end
 
@@ -336,12 +367,11 @@ module UI (
         if(|BP)begin
           disppos<=0;
           repaintS<=1;
+          dispdone<=0;
         end
       end
 
 
-
-      default: state<=state;
     endcase
 
   end

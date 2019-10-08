@@ -19,13 +19,14 @@ module top_UI (
   );
 
 assign LCD_RW=0;
-assign R=LCD_RS,G=TC[0],B=TC[1];
+assign {R,G,B}=~debug[2:0];
 
 wire[1:0] gain;
 wire[3:0] TC;
 wire[2:0] reffreq;
 wire[1:0] refampl;
 wire refIO;
+wire[3:0] debug;
 
 UI UI_inst (
   CLK12,
@@ -35,7 +36,7 @@ UI UI_inst (
   LCD_E,
   SF_D,
   // IO buttons
-  Button,
+  ~Button,
 
   // Interface
   0,//X,
@@ -47,7 +48,9 @@ UI UI_inst (
   TC,
   reffreq,
   refampl,
-  refIO
+  refIO,
+
+  debug
 
   );
 
