@@ -40,8 +40,8 @@ wire[3:0] debug;
 wire[31:0] X,Y;
 wire[16:0] Mag,Ang;   //17 bits beacuse of sign bit (cordic core)
 
-assign X=cnt;
-assign Y=~cnt;
+
+assign Y=cnt;
 
 always @ ( posedge clk ) begin
   cnt<=cnt+1;
@@ -92,6 +92,16 @@ UI UI_inst (
 //   .theta_o(Ang)
 //   );
 
+
+CIC Filter(
+  clk,
+
+  TC,
+
+  cnt,
+  X
+
+);
 
 
 

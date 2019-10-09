@@ -57,7 +57,7 @@ UIsim: top_UI_tb.vvp
 top_UI_tb.vvp: top_UI_tb.v top_UI.v UI.v BinToLCD.v lcd_defines.v lcd_display.v delay_counter.v
 	iverilog -s top_UI_tb -o $@ $^ `yosys-config --datdir/ice40/cells_sim.v`
 
-synth.bin: TOP_V1.v cordic/cordic.v UI/UI.v UI/BinToLCD.v UI/lcd_defines.v UI/lcd_display.v UI/delay_counter.v sram16x16.v Flash_to_SRAM.v spi_flash_reader.v sigma_delta.v dds.v mult16x16.v pll.v
+synth.bin: TOP_V1.v filter/CIC.v cordic/cordic.v UI/UI.v UI/BinToLCD.v UI/lcd_defines.v UI/lcd_display.v UI/delay_counter.v sram16x16.v Flash_to_SRAM.v spi_flash_reader.v sigma_delta.v dds.v mult16x16.v pll.v
 	yosys -l yosyslog.log -p 'synth_ice40 -top top -json yosysout.json' $^
 	nextpnr-ice40 --freq 30 --up5k --asc pnrout.asc --pcf UI/lcdtest.pcf --json yosysout.json
 	icepack pnrout.asc synth.bin
