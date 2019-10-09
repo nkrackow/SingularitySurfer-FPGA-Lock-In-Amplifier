@@ -1,13 +1,13 @@
 # Makefile for ICE40UP5K projects
 
 
-synth.bin: top.v sram16x16.v Flash_to_SRAM.v spi_flash_reader.v sigma_delta.v dds.v mult16x16.v pll.v
+legacysynth.bin: top.v sram16x16.v Flash_to_SRAM.v spi_flash_reader.v sigma_delta.v dds.v mult16x16.v pll.v
 	yosys -l yosyslog.log -p 'synth_ice40 -top top -json yosysout.json' $^
 	nextpnr-ice40 --freq 30 --up5k --asc pnrout.asc --pcf evn.pcf --json yosysout.json
 	icepack pnrout.asc synth.bin
 
 
-prog: synth.bin
+legacyprog: legacysynth.bin
 	iceprog $^
 
 sim: top_tb.vvp
@@ -56,3 +56,12 @@ UIsim: top_UI_tb.vvp
 
 top_UI_tb.vvp: top_UI_tb.v top_UI.v UI.v BinToLCD.v lcd_defines.v lcd_display.v delay_counter.v
 	iverilog -s top_UI_tb -o $@ $^ `yosys-config --datdir/ice40/cells_sim.v`
+
+synth.bin: TOP_V1.v UI/UI.v UI/BinToLCD.v UI/lcd_defines.v UI/lcd_display.v UI/delay_counter.v sram16x16.v Flash_to_SRAM.v spi_flash_reader.v sigma_delta.v dds.v mult16x16.v pll.v
+	yosys -l yosyslog.log -p 'synth_ice40 -top top -json yosysout.json' $^
+	nextpnr-ice40 --freq 36 --up5k --asc pnrout.asc --pcf evn.pcf --json yosysout.json
+	icepack pnrout.asc synth.bin
+
+
+prog: synth.bin
+	iceprog $^

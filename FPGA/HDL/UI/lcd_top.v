@@ -16,6 +16,7 @@ module lcd_top (
   output B
   );
 
+
 assign LCD_RW=0;
 
 

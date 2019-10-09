@@ -3,6 +3,7 @@
 
 module UI (
   input clk,
+  input rst,
 
   // IO LCD
   output wire LCD_RS,
@@ -14,16 +15,14 @@ module UI (
   // Interface
   input [31:0] X,
   input [31:0] Y,
-  input [31:0] Rad,
-  input [31:0] Ang,
+  input [16:0] Mag,
+  input [16:0] Ang,
 
   output reg [1:0] gain=0,
   output reg [3:0] TC=0,
   output reg [2:0] reffreq=0,
   output reg [1:0] refampl=0,
-  output reg refIO=0,
-
-  output wire [3:0] debug
+  output reg refIO=0
 
   );
 
@@ -37,17 +36,15 @@ module UI (
   wire weBTL;
 
   // basics
-  reg [31:0] count=0,number1=32'hfffffff0;
-  wire update, busy;
-  reg reset=1;
+  reg [23:0] count=0;
+  wire busy;
+  reg update=0;
 
-  assign update=&count[21:0];
 
-  assign debug=state;
 
   // debouncing vars
   reg[3:0] BP=0;
-  reg[21:0] cnt0=0,cnt1=0,cnt2=0,cnt3=0;
+  reg[23:0] cnt0=0,cnt1=0,cnt2=0,cnt3=0;
   reg btnt0=0,btnt1=0,btnt2=0,btnt3=0;
 
   // statemachine
@@ -61,6 +58,7 @@ module UI (
   parameter setrefampl = 4'h5;
 
 
+
   //substate logic
   reg ismagphase=0;
   reg[7:0] datS=0;
@@ -68,8 +66,6 @@ module UI (
   reg [4:0] disppos=0;
   reg dispdone=0;
   wire [4:0] addrS;
-
-
 
 
 
@@ -127,14 +123,11 @@ module UI (
 
 
   always @ ( posedge clk ) begin
+
     count<=count+1;
-    if(&count[4:0]) reset<=0;
-    if(&count[21:0]) number1<=number1+1;
-
-
-
     repaintS<=0;
     weS<=0;
+    update<=&count;
 
     if(&disppos) dispdone<=1;
     if(state!=disp&&!dispdone)begin
@@ -153,7 +146,10 @@ module UI (
             repaintS<=1;
             dispdone<=0;
           end
-          4'b0010: ismagphase<=!ismagphase;
+          4'b0010: begin
+            ismagphase<=!ismagphase;
+            update<=1;
+          end
         endcase
       end
 
@@ -318,6 +314,35 @@ module UI (
         5'h0f: datS<=8'b00111010;//:
 
 
+        5'h16: begin
+          datS<=8'b00100000;//_
+          if(reffreq==3'h7) datS<=8'b00110001;//1
+        end
+        5'h17: begin
+          datS<=8'b00110000;//0
+          if(reffreq<3'h4) datS<=8'b00100000;//_
+          if(reffreq==3'h4) datS<=8'b00110001;//1
+          if(reffreq==3'h5) datS<=8'b00110010;//2
+          if(reffreq==3'h6) datS<=8'b00110101;//5
+        end
+        5'h18: begin
+          datS<=8'b00110000;//0
+          if(reffreq==3'h0) datS<=8'b00100000;//_
+          if(reffreq==3'h1) datS<=8'b00110001;//1
+          if(reffreq==3'h2) datS<=8'b00110010;//2
+          if(reffreq==3'h3) datS<=8'b00110101;//5
+        end
+        5'h19:begin
+           datS<=8'b00110000;//0
+          if(reffreq==3'h0) datS<=8'b00110101;//5
+        end
+        5'h1a: datS<=8'b00110000;//0
+        5'h1b: datS<=8'b00110000;//0
+        5'h1c: datS<=8'b00100000;//_
+        5'h1d: datS<=8'b01001000;//H
+        5'h1e: datS<=8'b01111010;//z
+
+
 
         default: datS<=8'b00100000;//_
       endcase
@@ -355,6 +380,22 @@ module UI (
         5'h0f: datS<=8'b00111010;//:
 
 
+        5'h19:begin
+          datS<=8'b00100000;//_
+          if(refampl==2'h2) datS<=8'b00110001;//1
+        end
+        5'h1a:begin
+          datS<=8'b00100000;//_
+          if(refampl==2'h2) datS<=8'b00101110;//.
+        end
+        5'h1b:begin
+          datS<=8'b00110000;//0
+          if(refampl==2'h3) datS<=8'b00110011;//3
+          if(refampl==2'h2) datS<=8'b00110101;//5
+        end
+        5'h1c: datS<=8'b00100000;//_
+        5'h1d: datS<=8'b01010110;//V
+
 
         default: datS<=8'b00100000;//_
       endcase
@@ -382,8 +423,10 @@ module UI (
 
     update,
 
-    number1,
-    ~number1,
+    X,
+    Y,
+    Mag,
+    Ang,
     ismagphase,
 
     datBTL,
@@ -394,7 +437,7 @@ module UI (
 
   lcd LCD(
     clk,
-  	reset,
+  	rst,
 
   	dat,
   	addr,

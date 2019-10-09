@@ -5,7 +5,7 @@
 module top_UI_tb ();
 
   reg CLK=0;
-  reg [3:0] Button=0;
+  reg [3:0] Button=4'hf;
   wire R,G,B;
 
   wire LCD_RS;
@@ -36,11 +36,11 @@ initial begin
   $dumpfile("out.vcd");
   $dumpvars(0, top_UI_tb);
   #10
-  Button[0]<=1;
+  Button[1]<=0;
   #10
-  Button[0]<=0;
+  Button[1]<=1;
   #3000
-  Button[0]<=1;
+  Button[1]<=0;
   #10000
   $display("hallu world");
   $finish;
