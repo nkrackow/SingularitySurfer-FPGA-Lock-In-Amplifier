@@ -26,7 +26,7 @@ module CIC_tb ();
 initial begin
   $dumpfile("out.vcd");
   $dumpvars(0, CIC_tb);
-   #50000
+   #1000000
   $display("hallu world");
   $finish;
 end
@@ -39,7 +39,7 @@ end
 always begin
   #10
   tick<=!tick;
-  IN<=IN+1;
+//  IN<=IN+1;
 end
 
 endmodule //top_tb

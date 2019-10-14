@@ -14,26 +14,28 @@ module CIC (
 
   );
 
-parameter rate=4;//2048;
-parameter log2rate=2;
+parameter rate=512;//2048;
+parameter log2rate=9;
 
 reg lasttick=0;
 reg[10:0] tickcount=0;
 
-reg signed [63:0] I0=0; //Integrator Reg
+reg signed [48:0] I0=0, OUTpipe=0; //Integrator Reg
 
 reg[7:0] inaddr=0;
 reg we=0;
-wire[7:0] outaddr;
-wire[63:0] outdat;
+reg[7:0] outaddr;
+wire[48:0] outdat;
 
-assign outaddr=inaddr-(8'b00000001<<(TC));
+//assign outaddr=inaddr-(8'b00000001<<(TC));
 
 
 always @ ( posedge clk ) begin
 
   we<=0;
   lasttick<=tick;
+  outaddr<=inaddr-(8'b00000001<<(TC));
+  OUTpipe<=I0-outdat;
   if(!lasttick&&tick)begin
 
     tickcount<=tickcount+1;
@@ -42,7 +44,7 @@ always @ ( posedge clk ) begin
       inaddr<=inaddr+1;
       we<=1;
     end
-    if(!(|tickcount)) OUT<=(I0-outdat)>>(TC+log2rate);
+    if(!(|tickcount)) OUT<=OUTpipe>>(TC+log2rate);
     I0<=I0+IN;
 
 

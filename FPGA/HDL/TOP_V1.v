@@ -24,7 +24,7 @@ assign {R,G,B}={2'b11,LCD_RS};
 reg rst=1;
 reg[31:0] cnt=0;
 
-wire clk;
+wire clk,tick;
 
 
 // settings
@@ -37,11 +37,16 @@ wire[3:0] debug;
 
 
 // Signals
-wire[31:0] X,Y;
+wire[31:0] X,Y,loool;
 wire[16:0] Mag,Ang;   //17 bits beacuse of sign bit (cordic core)
 
 
 assign Y=cnt;
+
+
+assign loool= cnt[11] ?  cnt: ~cnt;
+
+assign tick=&cnt[10:0];
 
 always @ ( posedge clk ) begin
   cnt<=cnt+1;
@@ -68,8 +73,8 @@ UI UI_inst (
 
   X,//X,
   Y,//Y,
-  01234,
   98765,
+  Y,
 
   gain,
   TC,
@@ -95,10 +100,11 @@ UI UI_inst (
 
 CIC Filter(
   clk,
+  tick,
 
   TC,
 
-  cnt,
+  loool,
   X
 
 );

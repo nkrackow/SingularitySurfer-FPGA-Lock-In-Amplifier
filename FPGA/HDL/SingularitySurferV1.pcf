@@ -1,0 +1,20 @@
+
+#  Constrain File for the Singularity Surfer V1 board
+
+
+
+# Clock input from external 36 MHz Oscillator
+set_io CLK36 44   # Bridged from pin 35!!! pnr fails with 35 as input to PLL
+
+
+# LED
+set_io L0 46    # clipping LED
+set_io L1 47    # L1
+set_io L2 48    # L2
+set_io L3 45    # L3
+
+#Buttons
+set_io SET 3    # Button SET
+set_io PLUS 4   # Button +
+set_io MENU 2   # Button MENU
+set_io MINUS 6  # Button -

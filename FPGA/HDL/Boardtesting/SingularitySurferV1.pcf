@@ -1,0 +1,24 @@
+
+#  Constrain File for the Singularity Surfer V1 board
+
+
+
+# Clock input from external 36 MHz Oscillator
+set_io CLK36 44
+
+# LED
+set_io L0 46    # clipping LED
+set_io L1 47    # L1
+set_io L2 48    # L2
+set_io L3 45    # L3
+
+#Buttons
+set_io SET 3    # Button SET
+set_io PLUS 4   # Button +
+set_io MENU 2   # Button MENU
+set_io MINUS 6  # Button -
+
+#Analog Outputs
+set_io X_R 36   # X or R(magnitude) output
+set_io Y_T 35   # Y or Theta output
+set_io REFOUT 37   # Y or Theta output
