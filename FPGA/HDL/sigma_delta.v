@@ -2,6 +2,9 @@
 
 // SingularitySurfers delta-sigma accomulator modulator modul :)
 
+
+`default_nettype none
+
 module sigma_delta (
   input clk,
   input[precision-1:0] dac_val,

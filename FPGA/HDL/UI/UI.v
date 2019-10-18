@@ -176,17 +176,18 @@ module UI (
           5'h10: datS<=8'b00100000;//_
           5'h11:begin
             datS<=8'b00100000;//_
-            if(TC==4'hf) datS<=8'b00110001;//1
+            // if(TC==4'hf) datS<=8'b00110001;//1
           end
           5'h12:begin
             datS<=8'b00100000;//_
-            if(TC>4'he) datS<=8'b00110000;//0
-            if(TC==4'he) datS<=8'b00110001;//1
+            // if(TC>4'he) datS<=8'b00110000;//0
+            // if(TC==4'he) datS<=8'b00110001;//1
           end
           5'h13:begin
-            datS<=8'b00100000;//_
-            if(TC>4'hd) datS<=8'b00110000;//0
-            if(TC==4'hd) datS<=8'b00110001;//1
+            datS<={4'b0011,TC};
+            // datS<=8'b00100000;//_
+            // if(TC>4'hd) datS<=8'b00110000;//0
+            // if(TC==4'hd) datS<=8'b00110001;//1
           end
           5'h1d: datS<=8'b01101101;//m
           5'h1e: datS<=8'b01110011;//s

@@ -1,10 +1,11 @@
 
 // moves 65536 16 bit words from SPI flash to SRAM
 
+`default_nettype none
 
 module Flash_to_SRAM (
   input clk,
-  input rst,
+  input nrst,
 
   input start,
   output reg busy=0,
@@ -96,7 +97,7 @@ module Flash_to_SRAM (
 
  // Clock / Reset
  .clk(clk),
- .rst(rst)
+ .rst(nrst)
 );
 
 

@@ -1,4 +1,6 @@
 
+// signed multiplier module
+
 module mult16x16 (
   input clk,
   input wire [15:0] in1,

@@ -1,5 +1,6 @@
 
 
+`default_nettype none
 
 module top (
   input CLK12,
@@ -120,9 +121,6 @@ sigma_delta DAC2(
     {~sin[15],sin[14:1]},
     pulse_out2
   );
-
-
-
 
 
 

@@ -11,9 +11,13 @@
     environment.
 */
 
+
+
+
 `define VECTOR
 `include "cordic.v"
 module tb ();
+
 
   wire [`XY_BITS:0]    x_o,y_o;
   wire [`THETA_BITS:0] theta_o;
@@ -21,6 +25,7 @@ module tb ();
   reg  [`THETA_BITS:0] theta_i;  // angle in radians
   reg  clock,reset;
   reg init;
+
 
 cordic UUT (.clk(clock),.rst(reset),
 `ifdef ITERATE
@@ -32,7 +37,6 @@ cordic UUT (.clk(clock),.rst(reset),
   integer i,j,k;
   real a_i,a_o,a_e;
   real rx,ry,rex,rey;
-
   reg signed [`XY_BITS:0] ex,ey;
 
   reg signed [16:0] x [90:0];
@@ -53,6 +57,7 @@ cordic UUT (.clk(clock),.rst(reset),
         $display("angle %f computed %f",a_i,a_o);
     end
   endtask
+
 
   task show_rotate_results;
     input integer j;
@@ -99,6 +104,8 @@ cordic UUT (.clk(clock),.rst(reset),
 `ifdef COMBINATORIAL
   $display("COMBINATORIAL configuration");
 `endif
+
+
 
   // The following table is computed for U(1,15) format numbers
   // The angle data z[] is in radians

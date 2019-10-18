@@ -255,7 +255,7 @@ module BinToLCD (
         summand<=1000000000;     // 4294967296
         acc<=1000000000;
         rest<=Y;
-        if(ismagphase) rest<={16'h0000,Ang};
+        if(ismagphase) rest<=Ang;
         dec<=0;
         holdoff<=1;
         leadz<=0;

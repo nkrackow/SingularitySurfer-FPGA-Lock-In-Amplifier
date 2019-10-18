@@ -1,4 +1,6 @@
 
+`default_nettype none
+
 input clk,
   input wire[7:0] addr,
   input wire[7:0] din,

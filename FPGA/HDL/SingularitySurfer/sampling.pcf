@@ -1,0 +1,58 @@
+
+
+
+
+
+
+
+################# THIS IS FOR THE SINGULARITYSURFER BOARD!!!!!!!!!!!!!!
+
+
+
+
+set_io CLK36 44   # actually 36 MHz
+
+
+set_io R 46
+set_io G 47
+set_io B 48
+set_io L3 45
+
+
+set_io sMISO 9
+set_io sSCLK 10
+
+
+
+# ADC interface
+
+########################################################################
+# DIFFERENT THAT ON SCHEMATIC!!   SWITCHED BC OF OPEN DRAIN LED PINS (too slow for adc spi)
+set_io SCLK 38         # SPI clock       SWITCHED WITH A0!!!!!!!!!!
+set_io CONVST 42      # ADC start converion signal    SWITCHED WITH SDI
+set_io SDI 41         # ADC serial input (not used right noe)     SWITCHED WITH CONVST
+########################################################################
+set_io SDO 43         # ADC serial out
+
+
+
+
+# PGA interface
+
+#######################################################################
+# DIFFERENT THAT ON SCHEMATIC!!   SWITCHED BC OF OPEN DRAIN LED PINS (too slow for adc spi)
+set_io GAIN_A0 40         # PGA gain pin 0     SWITCHED WITH SCLK!!!!!
+########################################################################
+set_io GAIN_A1 39         # PGA gain pin1
+
+
+
+# Switches
+set_io S[0] 3
+set_io S[1] 4
+
+# SPI flash
+set_io ss   16
+set_io miso 17
+set_io mosi 14
+set_io sck  15

@@ -1,0 +1,87 @@
+
+#  Constrain File for the Singularity Surfer V1 board
+
+
+
+# Clock input from external 36 MHz Oscillator
+set_io CLK36 44
+
+
+
+# LED
+set_io L0 46           # clipping LED
+set_io L1 47           # L1
+set_io L2 48           # L2
+set_io L3 45           # L3
+
+
+
+#Buttons
+set_io SET 3           # Button SET
+set_io PLUS 4          # Button +
+set_io MENU 2          # Button MENU
+set_io MINUS 6         # Button -
+
+
+
+#Analog Outputs
+set_io X_R 36         # X or R(magnitude) output
+set_io Y_T 35         # Y or Theta output
+set_io REFOUT 37      # Y or Theta output
+
+
+
+# Reference Input
+set_io REFIN 23       # Reference input from SMA over a Schmitt trigger
+
+
+# ADC Interface
+########################################################################
+# DIFFERENT THAT ON SCHEMATIC!!   SWITCHED BC OF OPEN DRAIN LED PINS (too slow for adc spi)
+set_io SCLK 38        # SPI clock       SWITCHED WITH A0!!!!!!!!!!
+set_io CONVST 42      # ADC start converion signal    SWITCHED WITH SDI
+set_io SDI 41         # ADC serial input (not used right noe)     SWITCHED WITH CONVST
+########################################################################
+set_io SDO 43         # ADC serial out
+
+
+
+
+# PGA Interface
+#######################################################################
+# DIFFERENT THAT ON SCHEMATIC!!   SWITCHED BC OF OPEN DRAIN LED PINS (too slow for adc spi)
+set_io A0 40         # PGA gain pin 0     SWITCHED WITH SCLK!!!!!
+########################################################################
+set_io A1 39         # PGA gain pin1
+
+
+
+# LCD Interface
+set_io LCD_E 34            # LCD enable
+set_io LCD_RW 32           # LCD read/write
+set_io LCD_RS 31           # LCD register select
+set_io LCD_D4 28           # LCD Data Pin 4
+set_io LCD_D5 27           # LCD Data Pin 5
+set_io LCD_D6 26           # LCD Data Pin 6
+set_io LCD_D7 25           # LCD Data Pin 7
+
+
+
+# IO Header
+set_io IO[0] 9             # IO Header Pin 0 (IO9)
+set_io IO[1] 10            # IO Header Pin 1 (IO10)
+set_io IO[2] 11            # IO Header Pin 2 (IO11)
+set_io IO[3] 12            # IO Header Pin 3 (IO12)
+set_io IO[4] 21            # IO Header Pin 4 (IO21)
+set_io IO[5] 13            # IO Header Pin 5 (IO13)
+set_io IO[6] 20            # IO Header Pin 6 (IO20)
+set_io IO[7] 19            # IO Header Pin 7 (IO19)
+set_io IO[8] 18            # IO Header Pin 8 (IO18)
+
+
+
+# SPI Flash Interface
+set_io SS 16               # SPI Slave Select
+set_io SCK 15              # SPI Serial Clock
+set_io SO 14               # SPI Serial Output
+set_io SI 17               # SPI Serial Input

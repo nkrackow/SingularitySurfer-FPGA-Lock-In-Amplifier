@@ -1,3 +1,7 @@
+
+
+`default_nettype none
+
 /*  file:        cordic.v
     author:      Dale Drinkard
     release:     08/06/2008
@@ -126,8 +130,8 @@
                   combinatorial implementation runs at about 10 mhz while the iterative ones run at about 125 in a
                   Lattice ECP2 device.
 */
-//`define ITERATE
-`define PIPELINE
+`define ITERATE
+//`define PIPELINE
 //`define COMBINATORIAL
 
 /* CORDIC function
@@ -169,13 +173,19 @@
   the 1/2^i function on signed numbers
 */
 module signed_shifter (
+  input wire [`ITERATION_BITS-1:0] i,
   input wire signed [`XY_BITS:0] D,
-  output reg signed [`XY_BITS:0] Q );
+  output wire signed [`XY_BITS:0] Qout );
   integer j;
-  parameter i=0;
+  //reg signed [`XY_BITS:0] Q0,Q1,Q2;
+  reg signed [`XY_BITS:0] Q [`ITERATIONS:0];
+  assign Qout=Q[i];
   always @ * begin
-    Q = D;
-    for(j=0;j<i;j=j+1) Q = (Q >> 1) | (D[`XY_BITS] << `XY_BITS);
+    Q[0]=D;
+    for(j=0;j<`ITERATIONS;j=j+1) Q[j+1] = (Q[j] >> 1) | (D[`XY_BITS] << `XY_BITS);
+    // Q0 = D;
+    // Q1 = (Q0 >> 1) | (D[`XY_BITS] << `XY_BITS);
+    // Q2 = (Q1 >> 1) | (D[`XY_BITS] << `XY_BITS);
   end
 endmodule
 /*  Rotator
@@ -189,7 +199,7 @@ module rotator (
   input wire rst,
 `ifdef ITERATE
   input wire init,
-  input wire [`ITERATION_BITS:0] iteration,
+  input wire [`ITERATION_BITS-1:0] iteration,
   input wire signed [`THETA_BITS:0] tangle,
 `endif
   input wire signed  [`XY_BITS:0]    x_i,
@@ -204,15 +214,17 @@ module rotator (
   parameter integer iteration = 0;
   parameter signed [`THETA_BITS:0] tangle = 0;
 `endif
-  reg signed [`XY_BITS:0] x_1;
-  reg signed [`XY_BITS:0] y_1;
+  reg signed [`XY_BITS:0] x_1,x_i_s_pipe;
+  reg signed [`XY_BITS:0] y_1,y_i_s_pipe;
   reg signed [`THETA_BITS:0] z_1;
   wire signed [`XY_BITS:0] x_i_shifted;
   wire signed [`XY_BITS:0] y_i_shifted;
-  signed_shifter x_shifter(x_i,x_i_shifted);//signed_shifter x_shifter(iteration,x_i,x_i_shifted);
-  defparam x_shifter.i=iteration;
-  signed_shifter y_shifter(y_i,y_i_shifted);//signed_shifter y_shifter(iteration,y_i,y_i_shifted);
-  defparam y_shifter.i=iteration;
+  signed_shifter x_shifter(iteration,x_i,x_i_shifted);
+  // signed_shifter x_shifter(x_i,x_i_shifted);//
+  // defparam x_shifter.i=iteration;
+  signed_shifter y_shifter(iteration,y_i,y_i_shifted);
+  // signed_shifter y_shifter(y_i,y_i_shifted);//signed_shifter y_shifter(iteration,y_i,y_i_shifted);
+  // defparam y_shifter.i=iteration;
 `ifdef COMBINATORIAL
   always @ *
 `endif
@@ -240,12 +252,14 @@ module rotator (
 `ifdef VECTOR
       if (y_i > 0) begin
 `endif
-        x_1 <= x_i + y_i_shifted; //shifter(y_1,i); //(y_1 >> i);
-        y_1 <= y_i - x_i_shifted; //shifter(x_1,i); //(x_1 >> i);
+        y_i_s_pipe<=y_i_shifted;
+        x_i_s_pipe<=x_i_shifted;
+        x_1 <= x_i + y_i_s_pipe; //shifter(y_1,i); //(y_1 >> i);
+        y_1 <= y_i - x_i_s_pipe; //shifter(x_1,i); //(x_1 >> i);
         z_1 <= z_i + tangle;
       end else begin
-        x_1 <= x_i - y_i_shifted; //shifter(y_1,i); //(y_1 >> i);
-        y_1 <= y_i + x_i_shifted; //shifter(x_1,i); //(x_1 >> i);
+        x_1 <= x_i - y_i_s_pipe; //shifter(y_1,i); //(y_1 >> i);
+        y_1 <= y_i + x_i_s_pipe; //shifter(x_1,i); //(x_1 >> i);
         z_1 <= z_i - tangle;
       end
     end
@@ -429,6 +443,7 @@ defparam U14.tangle = tanangle(14);
 
 
 
+
 `endif
 
 
@@ -443,9 +458,12 @@ defparam U14.tangle = tanangle(14);
   assign x = init ? x_i : x_o;
   assign y = init ? y_i : y_o;
   assign z = init ? theta_i : theta_o;
-  always @ (posedge clk or posedge init)
-    if (init) iteration <= 0;
+  always @ (posedge clk) begin
+    if (init) begin
+      iteration <= 0;
+    end
     else iteration <= iteration + 1;
+  end
   rotator U (clk,rst,init,iteration,tanangle(iteration),x,y,z,x_o,y_o,theta_o);
 `endif
 endmodule

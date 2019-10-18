@@ -4,6 +4,8 @@
 // Uses all of the onboard sram as a quater sin lookup
 // to implement a 16 bit sin/cos - 18 bit phase resolution DDS core
 
+`default_nettype none
+
 module dds (
   input clk,
   input go,

@@ -14,8 +14,8 @@ module CIC (
 
   );
 
-parameter rate=512;//2048;
-parameter log2rate=9;
+parameter rate=2;//2048;
+parameter log2rate=1;
 
 reg lasttick=0;
 reg[10:0] tickcount=0;
@@ -46,8 +46,6 @@ always @ ( posedge clk ) begin
     end
     if(!(|tickcount)) OUT<=OUTpipe>>(TC+log2rate);
     I0<=I0+IN;
-
-
 
 
   end

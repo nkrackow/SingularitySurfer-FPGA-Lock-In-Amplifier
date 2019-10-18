@@ -1,7 +1,12 @@
 
 
 
-// ALL TIMING FOR 50MHz CLK
+// ALL TIMING FOR 36MHz CLK!!
+
+// The overall sampling frequency will be 900 kHz
+
+
+`default_nettype none
 
 module adc_host (
   input clk,
