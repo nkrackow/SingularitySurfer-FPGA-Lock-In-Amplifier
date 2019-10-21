@@ -1,6 +1,10 @@
 
 
 
+
+`default_nettype none
+
+
 module UI (
   input clk,
   input rst,
@@ -19,8 +23,8 @@ module UI (
   input [16:0] Ang,
 
   output reg [1:0] gain=0,
-  output reg [3:0] TC=0,
-  output reg [2:0] reffreq=0,
+  output reg [3:0] TC=6,
+  output reg [2:0] reffreq=1,
   output reg [1:0] refampl=0,
   output reg refIO=0
 
@@ -36,7 +40,7 @@ module UI (
   wire weBTL;
 
   // basics
-  reg [23:0] count=0;
+  reg [22:0] count=0;
   wire busy;
   reg update=0;
 
@@ -382,19 +386,24 @@ module UI (
 
 
         5'h19:begin
-          datS<=8'b00100000;//_
-          if(refampl==2'h2) datS<=8'b00110001;//1
+          datS<=8'b00110000;//0
+          if(refampl==2'h1) datS<=8'b00110001;//1
+          if(refampl==2'h0) datS<=8'b00110011;//3
         end
         5'h1a:begin
-          datS<=8'b00100000;//_
-          if(refampl==2'h2) datS<=8'b00101110;//.
+          datS<=8'b00101110;//.
         end
         5'h1b:begin
           datS<=8'b00110000;//0
-          if(refampl==2'h3) datS<=8'b00110011;//3
-          if(refampl==2'h2) datS<=8'b00110101;//5
+          if(refampl==2'h0) datS<=8'b00110011;//3
+          if(refampl==2'h1) datS<=8'b00110110;//6
+          if(refampl==2'h2) datS<=8'b00111001;//9
+          if(refampl==2'h3) datS<=8'b00110100;//4
         end
-        5'h1c: datS<=8'b00100000;//_
+        5'h1c: begin
+          datS<=8'b00100000;//_
+          if(refampl==2'h3) datS<=8'b00110101;//5
+        end
         5'h1d: datS<=8'b01010110;//V
 
 
@@ -403,8 +412,8 @@ module UI (
         case (BP)
           4'b0001: state<=setTC;
           4'b0010: state<=disp;
-          4'b0100: refampl<=refampl+1;
-          4'b1000: refampl<=refampl-1;
+          4'b0100: refampl<=refampl-1;
+          4'b1000: refampl<=refampl+1;
         endcase
         if(|BP)begin
           disppos<=0;

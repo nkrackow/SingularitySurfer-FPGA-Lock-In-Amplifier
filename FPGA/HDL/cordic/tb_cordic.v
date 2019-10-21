@@ -14,10 +14,11 @@
 
 
 
+
+
 `define VECTOR
 `include "cordic.v"
 module tb ();
-
 
   wire [`XY_BITS:0]    x_o,y_o;
   wire [`THETA_BITS:0] theta_o;
@@ -25,6 +26,7 @@ module tb ();
   reg  [`THETA_BITS:0] theta_i;  // angle in radians
   reg  clock,reset;
   reg init;
+
 
 
 cordic UUT (.clk(clock),.rst(reset),

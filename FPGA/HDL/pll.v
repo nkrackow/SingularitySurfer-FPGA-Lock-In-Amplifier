@@ -1,20 +1,26 @@
 
+//    EXPERI  MENTAL      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 // SingularitySurfers PLL core
 
 // fuck that took far too long...
 //assign eP=$signed(phase[24:9])-$signed(16'h7fff);    // calculate difference to 2pi
+
+// fibonacci dithered
 
 
 module pll (
   input clk,
   input in,
   output[17:0] phase_out,
-  output reg locked=0,
-  output reg[15:0]debug
+  output reg locked=0
   );
 
 //  parameter signed KD= 16'h0000;   // 0.0 Loopfilter Differential Gain in s7.8 format
-  parameter signed KP= 16'b0001;   // 1.0 Loopfilter Proportional Gain in s7.8 format
+//  parameter signed KP= 16'b0001;   // 1.0 Loopfilter Proportional Gain in s7.8 format
+
+wire [6:0] fib;
+wire [24:0] phase_out_temp;
 
 reg [31:0] phase=0;     // 24 bit/ 0x00ffffff equals 2 pi. upper bits to sense higher freqs
 
@@ -22,36 +28,46 @@ reg [31:0] phase=0;     // 24 bit/ 0x00ffffff equals 2 pi. upper bits to sense h
 reg signed[16:0] incr=17'd600;     // phase increase word.
 
 reg l_in=0,l2_in=0;   //last and second last input. NECCESARY TO DOUBLE REGISTER SYNC HERE!
+reg pipestep=0;
+assign phase_out_temp=phase[23:0]+fib;
 
-assign phase_out=phase[23:6];
+//assign phase_out=phase[23:6];
+assign phase_out=phase_out_temp[23:6];
 
 
-    wire signed [15:0] eP,eD;     //  Propotrional Error term
-    reg signed [15:0] last_eP;
+    reg signed [15:0] eD=0;     //  Propotrional Error term
+    reg signed [15:0] last_eP=0;
+    wire signed [15:0] eP;
 //    wire signed [31:0] fullout;   // full 32 bit output wit KP and KD added up
 
-assign eP= (|phase[31:25]) ? 16'h7fff:    // check if overflow and assign maxvalue
-            (phase[24:9]-16'h7fff); // or phase error
-assign eD=eP-last_eP;
+ assign eP= (|phase[31:25]) ? 16'h7fff:    // check if overflow and assign maxvalue
+             (phase[24:9]-16'h7fff); // or phase error
+// assign eD=eP-last_eP;
 
 always @ ( posedge clk ) begin
+  pipestep<=0;
   locked<=0;
   if((&~eP[15:12])||(&eP[15:12])) locked<=1;    // locked if small pos or neg value
   phase<=phase+incr;
   l_in<=in;
   l2_in<=l_in;
+
+
   //debug<=fullout[31:16];
   //debug<=phase[23:8];
   if(!l2_in&&l_in) begin    //the edgesense has to be double registered!!! otherwise gliches occure!
+    pipestep<=1;
     last_eP<=eP;
+    eD<=eP-last_eP;
     phase<=32'h00000000;    // reset multiple of 2pi
-    incr<=incr-$signed(eP[15:9])+$signed(eD[15:11]); // proportional and derivative loop gain set by adding higher or lower bits to phase increment
     //debug<=eD;
   end
+  if(pipestep==1) incr<=incr-$signed(last_eP[15:9])+$signed(eD[15:11]); // proportional and derivative loop gain set by adding higher or lower bits to phase increment
 
 end
 
 
+fibonacci7 randgen(clk,fib);
 
 
     // multiplier wiring

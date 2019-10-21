@@ -61,49 +61,59 @@ module top (
 
 
 // temporary stuff, you've never seen this.
-reg [15:0] outstuff=0;
+//reg [15:0] outstuff=0;
 
 
  //basics
-assign LCD_RW=0;
+wire clipping;
 reg rst=1;
-reg[31:0] cnt=0;
+reg[24:0] cnt=0;
 wire tick;
 
 
 // settings
 wire[1:0] gain;
 wire[3:0] TC;
-wire[2:0] reffreq;
-wire[1:0] refampl;
+wire[2:0] reffreqset;
+wire[1:0] refamplset;
 wire refIO;
 wire[3:0] debug;
 
 
 // DSP Signals
+wire [17:0] oscphase,phase,pllphase;
 wire signed [31:0] X,Y;
 wire[16:0] Mag,Ang;    //17 bits beacuse of sign bit (cordic core)
-wire signed [15:0] sin,cos;    // sin and cos from DDS core
+wire signed [15:0] sin,cos,sinpos;    // sin and cos from DDS core
 wire signed [15:0] adcdata;    // raw adc samples
 wire signed [31:0] sinmod,cosmod;   // sin and cos modulated signals
 
 // CORES aux Signals
-reg loadlookup=0,cinit=0;
-wire wen,wen_w,busy,newdata;
+reg loadlookup=0;
+wire wen,wen_w,busy,newdata,islocked;
 wire[15:0] addr,wdata,dout,addr_r,addr_w;
 
 
 // Basic assigns
 assign SDI=1'b1;    // SUPER IMPORTANT, ADC IS DISABLED IF NOT HIGH
+assign LCD_RW=0;    // LCD in write only mode
 
 //assign Y=cnt;
 
 assign {wen,addr}= busy ? {wen_w,addr_w} : {1'b0,addr_r};
 
+assign sinpos={!sin[15],sin[14:0]};
 
+assign phase= refIO ? pllphase : oscphase ;
+
+// assert clipping if adcdata mag very big
+assign clipping=(!adcdata[15]&&(&adcdata[14:11]))||(adcdata[15]&&(&~adcdata[14:11]));
+
+
+assign {A1,A0}=gain;
 assign L2=|adcdata;
-assign L1=newdata;
-assign L0=busy;
+assign L1=islocked;
+assign L0=clipping;
 assign L3=cnt[22];
 
 
@@ -114,8 +124,7 @@ always @ ( posedge CLK36 ) begin
   cnt<=cnt+1;
   if(&cnt[5:0]) rst<=0;
   if(!loadlookup&&cnt[9]) loadlookup<=1;
-  outstuff<=X[31:16];
-  cinit<=&cnt[9:0];
+//  outstuff<=X[31:16];
 end
 
 
@@ -136,40 +145,42 @@ UI UI_inst (
   // X[16:0],//MAG,
   // Y[16:0],//Ang,
 
-  X,//X,
-  Y,//Y,
+  X,
+  Y,
   Mag,
   Ang,
 
   gain,
   TC,
-  reffreq,
-  refampl,
+  reffreqset,
+  refamplset,
   refIO
 
   );
 
 
-cordic cordicCORE (
-  .clk(CLK36),
-  .rst(rst),
-  .init(cinit),
-  .x_i(X[31:15]),
-  .y_i(0),
-  .theta_i(0),
-  .x_o(Mag),
-  .y_o(),
-  .theta_o(Ang)
+oscillator OSC(
+  CLK36,
+  reffreqset,
+  oscphase
   );
 
 
 
-dds dds_core(
+pll PLL(
+  CLK36,
+  REFIN,
+  pllphase,
+  islocked
+  );
+
+
+dds DDS(
   CLK36,
   cnt[2],
   //sweep,
   //{pllphase},
-  {cnt[11:0],6'b0},
+  phase,
   //cnt[17:0],
   sin,
   cos,
@@ -181,24 +192,24 @@ dds dds_core(
 
 sigma_delta DAC1(
   CLK36,
-  {~adcdata[15],adcdata[14:0]},
+  {~X[31],X[30:16]},
   X_R
   );
 
 sigma_delta DAC2(
   CLK36,
-  {~outstuff[15],outstuff[14:0]},
+  {~sinmod[31],sinmod[30:16]},
   Y_T
   );
 
-// sigma_delta DAC3(
-//     CLK36,
-//     {~sin[15],sin[14:1]},
-//     REFOUT
-//   );
+sigma_delta DAC3(
+  CLK36,
+  (sinpos>>refamplset),
+  REFOUT
+  );
 
 
-adc_host adc_host_hi(
+adc_host ADC(
   CLK36,
   1'b1,
   CONVST,
@@ -208,14 +219,14 @@ adc_host adc_host_hi(
   newdata
   );
 
-mult16x16 mult1(
+mult16x16 Mult1(
   CLK36,
   sin,
   adcdata,
   sinmod
   );
 
-mult16x16 mult2(
+mult16x16 Mult2(
   CLK36,
   cos,
   adcdata,
@@ -229,16 +240,30 @@ CIC Filter1(
   sinmod,
   X
 );
-defparam Filter1.rate=16;
-defparam Filter1.log2rate=4;
+defparam Filter1.rate=32;
+defparam Filter1.log2rate=5;
 
-// CIC Filter2(
-//   CLK36,
-//   newdata,
-//   TC,
-//   cosmod,
-//   Y
-// );
+
+CIC Filter2(
+  CLK36,
+  newdata,
+  TC,
+  cosmod,
+  Y
+);
+defparam Filter2.rate=32;
+defparam Filter2.log2rate=5;
+
+
+fullcordic CORDIC(
+  CLK36,
+  rst,
+  X[31:15],
+  Y[31:15],
+  Mag,
+  Ang
+  );
+
 
 Flash_to_SRAM F2SRAM(
   CLK36,

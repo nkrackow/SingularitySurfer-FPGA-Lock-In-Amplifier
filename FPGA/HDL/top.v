@@ -151,8 +151,7 @@ sigma_delta DAC2(
     clk,
     v,
     pllphase,
-    islocked,
-    debug
+    islocked
     );
 
 

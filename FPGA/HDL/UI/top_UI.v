@@ -47,7 +47,7 @@ UI UI_inst (
   ~Button,
 
   // Interface
-  cnt,//X,
+  32'h000FF000,//X,
   ~cnt,//Y,
   cnt,//Rad,
   ~cnt,//Ang,

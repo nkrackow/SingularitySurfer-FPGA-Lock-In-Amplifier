@@ -36,11 +36,11 @@ initial begin
   $dumpfile("out.vcd");
   $dumpvars(0, top_UI_tb);
   #10
-  Button[1]<=0;
+//  Button[1]<=0;
   #10
-  Button[1]<=1;
+//  Button[1]<=1;
   #3000
-  Button[1]<=0;
+//  Button[1]<=0;
   #10000
   $display("hallu world");
   $finish;

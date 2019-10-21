@@ -91,8 +91,8 @@
 
   The user can define other formats by creating a new tanangle function
 */
-// `define DEGREE_8_8
-`define RADIAN_16
+`define DEGREE_8_8
+//`define RADIAN_16
 
 /*  Bit accuracy for sin and cos
 
@@ -115,7 +115,7 @@
   This number is <= the number of bits used in the angles
 
 */
-`define ITERATIONS 16
+`define ITERATIONS 9
 `define ITERATION_BITS 4  // 2^ITERATION_BITS = ITERATIONS
 
 /* Implementation options
@@ -130,8 +130,8 @@
                   combinatorial implementation runs at about 10 mhz while the iterative ones run at about 125 in a
                   Lattice ECP2 device.
 */
-`define ITERATE
-//`define PIPELINE
+//`define ITERATE
+`define PIPELINE
 //`define COMBINATORIAL
 
 /* CORDIC function
@@ -172,22 +172,37 @@
   This module does an arbitrary right shift to implement'
   the 1/2^i function on signed numbers
 */
+
+//    Normans crapshifter
+// module signed_shifter (
+//   input wire [`ITERATION_BITS-1:0] i,
+//   input wire signed [`XY_BITS:0] D,
+//   output wire signed [`XY_BITS:0] Qout );
+//   integer j;
+//   //reg signed [`XY_BITS:0] Q0,Q1,Q2;
+//   reg signed [`XY_BITS:0] Q [`ITERATIONS:0];
+//   assign Qout=Q[i];
+//   always @ * begin
+//     Q[0]=D;
+//     for(j=0;j<`ITERATIONS;j=j+1) Q[j+1] = (Q[j] >> 1) | (D[`XY_BITS] << `XY_BITS);
+//     // Q0 = D;
+//     // Q1 = (Q0 >> 1) | (D[`XY_BITS] << `XY_BITS);
+//     // Q2 = (Q1 >> 1) | (D[`XY_BITS] << `XY_BITS);
+//   end
+// endmodule
+
 module signed_shifter (
-  input wire [`ITERATION_BITS-1:0] i,
   input wire signed [`XY_BITS:0] D,
-  output wire signed [`XY_BITS:0] Qout );
+  output reg signed [`XY_BITS:0] Q );
   integer j;
-  //reg signed [`XY_BITS:0] Q0,Q1,Q2;
-  reg signed [`XY_BITS:0] Q [`ITERATIONS:0];
-  assign Qout=Q[i];
+  parameter i=0;
   always @ * begin
-    Q[0]=D;
-    for(j=0;j<`ITERATIONS;j=j+1) Q[j+1] = (Q[j] >> 1) | (D[`XY_BITS] << `XY_BITS);
-    // Q0 = D;
-    // Q1 = (Q0 >> 1) | (D[`XY_BITS] << `XY_BITS);
-    // Q2 = (Q1 >> 1) | (D[`XY_BITS] << `XY_BITS);
+    Q = D;
+    for(j=0;j<i;j=j+1) Q = (Q >> 1) | (D[`XY_BITS] << `XY_BITS);
   end
 endmodule
+
+
 /*  Rotator
   This module is the heart of the CORDIC computer and implements the CORDIC algorithm.
   Input values x_i, y_i, and z_i are micro computed based on the iteration step
@@ -214,17 +229,17 @@ module rotator (
   parameter integer iteration = 0;
   parameter signed [`THETA_BITS:0] tangle = 0;
 `endif
-  reg signed [`XY_BITS:0] x_1,x_i_s_pipe;
-  reg signed [`XY_BITS:0] y_1,y_i_s_pipe;
+  reg signed [`XY_BITS:0] x_1,x_i_s_pipe,x_i_pipe;
+  reg signed [`XY_BITS:0] y_1,y_i_s_pipe,y_i_pipe;
   reg signed [`THETA_BITS:0] z_1;
   wire signed [`XY_BITS:0] x_i_shifted;
   wire signed [`XY_BITS:0] y_i_shifted;
-  signed_shifter x_shifter(iteration,x_i,x_i_shifted);
-  // signed_shifter x_shifter(x_i,x_i_shifted);//
-  // defparam x_shifter.i=iteration;
-  signed_shifter y_shifter(iteration,y_i,y_i_shifted);
-  // signed_shifter y_shifter(y_i,y_i_shifted);//signed_shifter y_shifter(iteration,y_i,y_i_shifted);
-  // defparam y_shifter.i=iteration;
+  //signed_shifter x_shifter(iteration,x_i,x_i_shifted);
+  signed_shifter x_shifter(x_i,x_i_shifted);//
+  defparam x_shifter.i=iteration;
+  //signed_shifter y_shifter(iteration,y_i,y_i_shifted);
+  signed_shifter y_shifter(y_i,y_i_shifted);//signed_shifter y_shifter(iteration,y_i,y_i_shifted);
+  defparam y_shifter.i=iteration;
 `ifdef COMBINATORIAL
   always @ *
 `endif
@@ -238,28 +253,46 @@ module rotator (
       x_1 <= 0;
       y_1 <= 0;
       z_1 <= 0;
+      y_i_s_pipe<=0;
+      x_i_s_pipe<=0;
+      y_i_pipe<=0;
+      x_i_pipe<=0;
     end else begin
 `ifdef ITERATE
       if (init) begin
         x_1 <= x_i;
         y_1 <= y_i;
         z_1 <= z_i;
+        y_i_s_pipe<=0;
+        x_i_s_pipe<=0;
+        y_i_pipe<=0;
+        x_i_pipe<=0;
       end else
+      // begin
+      //   y_i_s_pipe<=y_i_shifted;
+      //   x_i_s_pipe<=x_i_shifted;
+      //   y_i_pipe<=y_i;
+      //   x_i_pipe<=x_i;
+      // end
 `endif
+
 `ifdef ROTATE
       if (z_i < 0) begin
 `endif
 `ifdef VECTOR
       if (y_i > 0) begin
 `endif
-        y_i_s_pipe<=y_i_shifted;
-        x_i_s_pipe<=x_i_shifted;
-        x_1 <= x_i + y_i_s_pipe; //shifter(y_1,i); //(y_1 >> i);
-        y_1 <= y_i - x_i_s_pipe; //shifter(x_1,i); //(x_1 >> i);
+
+        // x_1 <= x_i_pipe + y_i_s_pipe; //shifter(y_1,i); //(y_1 >> i);
+        // y_1 <= y_i_pipe - x_i_s_pipe; //shifter(x_1,i); //(x_1 >> i);
+        x_1 <= x_i + y_i_shifted; //shifter(y_1,i); //(y_1 >> i);
+        y_1 <= y_i - x_i_shifted; //shifter(x_1,i); //(x_1 >> i);
         z_1 <= z_i + tangle;
       end else begin
-        x_1 <= x_i - y_i_s_pipe; //shifter(y_1,i); //(y_1 >> i);
-        y_1 <= y_i + x_i_s_pipe; //shifter(x_1,i); //(x_1 >> i);
+        x_1 <= x_i - y_i_shifted; //shifter(y_1,i); //(y_1 >> i);
+        y_1 <= y_i + x_i_shifted; //shifter(x_1,i); //(x_1 >> i);
+        // x_1 <= x_i_pipe - y_i_s_pipe; //shifter(y_1,i); //(y_1 >> i);
+        // y_1 <= y_i_pipe + x_i_s_pipe; //shifter(x_1,i); //(x_1 >> i);
         z_1 <= z_i - tangle;
       end
     end
@@ -412,33 +445,33 @@ rotator U7 (clk,rst,x[7],y[7],z[7],x[7+1],y[7+1],z[7+1]);
 defparam U7.iteration = 7;
 defparam U7.tangle = tanangle(7);
 
-rotator U8 (clk,rst,x[8],y[8],z[8],x[8+1],y[8+1],z[8+1]);
-defparam U8.iteration = 8;
-defparam U8.tangle = tanangle(8);
-
-rotator U9 (clk,rst,x[9],y[9],z[9],x[9+1],y[9+1],z[9+1]);
-defparam U9.iteration = 9;
-defparam U9.tangle = tanangle(9);
-
-rotator U10 (clk,rst,x[10],y[10],z[10],x[10+1],y[10+1],z[10+1]);
-defparam U10.iteration = 10;
-defparam U10.tangle = tanangle(10);
-
-rotator U11 (clk,rst,x[11],y[11],z[11],x[11+1],y[11+1],z[11+1]);
-defparam U11.iteration = 11;
-defparam U11.tangle = tanangle(11);
-
-rotator U12 (clk,rst,x[12],y[12],z[12],x[12+1],y[12+1],z[12+1]);
-defparam U12.iteration = 12;
-defparam U12.tangle = tanangle(12);
-
-rotator U13 (clk,rst,x[13],y[13],z[13],x[13+1],y[13+1],z[13+1]);
-defparam U13.iteration = 13;
-defparam U13.tangle = tanangle(13);
-
-rotator U14 (clk,rst,x[14],y[14],z[14],x[14+1],y[14+1],z[14+1]);
-defparam U14.iteration = 14;
-defparam U14.tangle = tanangle(14);
+// rotator U8 (clk,rst,x[8],y[8],z[8],x[8+1],y[8+1],z[8+1]);
+// defparam U8.iteration = 8;
+// defparam U8.tangle = tanangle(8);
+// 
+// rotator U9 (clk,rst,x[9],y[9],z[9],x[9+1],y[9+1],z[9+1]);
+// defparam U9.iteration = 9;
+// defparam U9.tangle = tanangle(9);
+//
+// rotator U10 (clk,rst,x[10],y[10],z[10],x[10+1],y[10+1],z[10+1]);
+// defparam U10.iteration = 10;
+// defparam U10.tangle = tanangle(10);
+//
+// rotator U11 (clk,rst,x[11],y[11],z[11],x[11+1],y[11+1],z[11+1]);
+// defparam U11.iteration = 11;
+// defparam U11.tangle = tanangle(11);
+//
+// rotator U12 (clk,rst,x[12],y[12],z[12],x[12+1],y[12+1],z[12+1]);
+// defparam U12.iteration = 12;
+// defparam U12.tangle = tanangle(12);
+//
+// rotator U13 (clk,rst,x[13],y[13],z[13],x[13+1],y[13+1],z[13+1]);
+// defparam U13.iteration = 13;
+// defparam U13.tangle = tanangle(13);
+//
+// rotator U14 (clk,rst,x[14],y[14],z[14],x[14+1],y[14+1],z[14+1]);
+// defparam U14.iteration = 14;
+// defparam U14.tangle = tanangle(14);
 
 
 
@@ -453,17 +486,22 @@ defparam U14.tangle = tanangle(14);
 
 
 `ifdef ITERATE
+  reg delay=0;
   reg [`ITERATION_BITS:0] iteration;
   wire signed [`XY_BITS:0] x,y,z;
-  assign x = init ? x_i : x_o;
-  assign y = init ? y_i : y_o;
-  assign z = init ? theta_i : theta_o;
+  assign x = (init) ? x_i : x_o;
+  assign y = (init) ? y_i : y_o;
+  assign z = (init) ? theta_i : theta_o;
   always @ (posedge clk) begin
     if (init) begin
       iteration <= 0;
+      delay<=1;
     end
-    else iteration <= iteration + 1;
+    else begin
+      iteration <= iteration + 1;
+      delay<=0;
+    end
   end
-  rotator U (clk,rst,init,iteration,tanangle(iteration),x,y,z,x_o,y_o,theta_o);
+  rotator U (clk,rst,init,iteration-1,tanangle(iteration-1),x,y,z,x_o,y_o,theta_o);
 `endif
 endmodule

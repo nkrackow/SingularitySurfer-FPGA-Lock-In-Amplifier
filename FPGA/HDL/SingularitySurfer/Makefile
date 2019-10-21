@@ -2,9 +2,9 @@
 
 
 
-synth.bin: TOP_V1.v ../adc_host.v ../filter/CIC.v ../filter/dpram_64x8.v ../cordic/cordic.v ../UI/UI.v ../UI/BinToLCD.v ../UI/lcd_defines.v ../UI/lcd_display.v ../UI/delay_counter.v ../sram16x16.v ../Flash_to_SRAM.v ../spi_flash_reader.v ../sigma_delta.v ../dds.v ../mult16x16.v ../pll.v
+synth.bin: TOP_V1.v ../fibonacci7.v ../fibonacci15.v ../oscillator.v ../adc_host.v ../filter/CIC.v ../filter/dpram_64x8.v ../cordic/fullcordic.v ../cordic/cordic.v ../UI/UI.v ../UI/BinToLCD.v ../UI/lcd_defines.v ../UI/lcd_display.v ../UI/delay_counter.v ../sram16x16.v ../Flash_to_SRAM.v ../spi_flash_reader.v ../sigma_delta.v ../dds.v ../mult16x16.v ../pll.v
 	yosys -l yosyslog.log -p 'synth_ice40 -top top -json yosysout.json' $^
-	nextpnr-ice40 --freq 35.5 --up5k --asc pnrout.asc --pcf SingularitySurferV1.pcf --json yosysout.json
+	nextpnr-ice40 --freq 36 --up5k --asc pnrout.asc --pcf SingularitySurferV1.pcf --json yosysout.json
 	icepack pnrout.asc synth.bin
 
 

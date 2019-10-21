@@ -14,8 +14,8 @@ module CIC (
 
   );
 
-parameter rate=2;//2048;
-parameter log2rate=1;
+parameter rate=1024;//2048;
+parameter log2rate=10;
 
 reg lasttick=0;
 reg[10:0] tickcount=0;
