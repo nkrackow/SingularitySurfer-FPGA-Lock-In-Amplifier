@@ -15,7 +15,7 @@ Measuring the change of phase due to changing the distance of two speakers (of w
 ## Overview:
 Lock-In amplifiers are a very useful tool in many physics and bio experiments where your signal of interest might be covered by a lot of noise and interference. It does so by effectively correlating out the signal of interest. As analog components are always subject to noise, drift and non-linearities, performance in a DSP Lock-In can be far superior.
 The project leverages the affordable ICE40 FPGA with its fully open source toolchain to implement the digital signal processing. Analog components are implemented in a manner that strikes a balance between performance and cost. As the analog frontend mostly determines the overall performance, a focus was put on its implementation. The total BOM cost is below 70€.
-The SingularitySurfer was developed as a personal learning platform that I share so others can get design ideas and see my approach. It does NOT intend to give reference designs or to teach the subject. 
+The SingularitySurfer was developed as a personal learning platform that I share so others can get design ideas and see my approach. It does not intend to give reference designs or to teach the subject. 
 Cores from other people:
 * CORDIC: https://opencores.org/projects/verilog_cordic_core
 * SPI flash reader: https://github.com/smunaut/ice40-playground/tree/master/cores/spi_flash
