@@ -53,7 +53,7 @@ In order to avoid spurious tones in the output spectrum of the DDS when using th
 ## DAC:
 As the Lock-In’s performance is not dependent on the output reference signal (as long as it contains a strong spectral component exactly at the reference frequency and other spectral components are masked by the noise added in the DUT), a basic sigma-delta DAC is used. Same goes for the X/R and Y/Theta "baseband" outputs, as they are essentially just DC (however DC accuracy has to be considered here) . The sigma-delta DACs require just a single FPGA pin and a passive second order lowpass with buffered output as external hardware in order to generate analog signals. Inside the FPGA the DAC uses a basic first-order sigma-delta modulator. With a modulator frequency of 36 MHz and 100kHz lowpass cutoff, the SNR is still better than 60dB. However switching many single-ended FPGA pins at these frequencies might lead to high EMI emissions. This was tried to be avoided by placing the lowpass filter close to the FPGA pins.
 
-## PLL *experimental*:
+## PLL *(experimental)*:
 The all-digital PLL gets a clean digital input signal by the use of a Schmitt-Trigger at the reference input. It uses a 32bit phase accumulator and 17bit phase increment word which leads to good phase precision. The DP controller can update the phase increment word without the need for multipliers by simply bit shifting the error signals. The controller can therefore only be tuned very coarsely which was done by simple trial and error. With this setup the controller can lock and track any reference signal between 500Hz and 100kHz. However it can get stuck in "limbo" with an aperiodic input signal and needs a reset to recover.
 
 ## Multipliers and CIC filter:
