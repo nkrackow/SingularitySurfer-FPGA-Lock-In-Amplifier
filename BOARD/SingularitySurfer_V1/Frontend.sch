@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:SingularitySurfer_V1-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -463,7 +462,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/ref5030.pdf" H 3050 3600 50  0001 C CIN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SingularitySurfer:AD8675 U11
+L SingularitySurfer_V1-rescue:AD8675-SingularitySurfer U11
 U 1 1 5D762A93
 P 5800 3200
 F 0 "U11" H 5800 3450 50  0000 L CNN
@@ -474,7 +473,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 5950 3350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SingularitySurfer:AD8253 U12
+L SingularitySurfer_V1-rescue:AD8253-SingularitySurfer U12
 U 1 1 5D6EDD01
 P 7500 4800
 F 0 "U12" H 7475 5315 50  0000 C CNN
@@ -485,7 +484,7 @@ F 3 "" H 7450 4800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L SingularitySurfer:MCP33131D U9
+L SingularitySurfer_V1-rescue:MCP33131D-SingularitySurfer U9
 U 1 1 5D6EE5E5
 P 1900 4700
 F 0 "U9" H 1900 5165 50  0000 C CNN

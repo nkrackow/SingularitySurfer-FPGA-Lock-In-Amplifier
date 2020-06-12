@@ -497,6 +497,7 @@ F0 "U" -350 350 50 H V C CNN
 F1 "Memory_Flash_W25Q32JVSS" 300 350 50 H V C CNN
 F2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+ALIAS W25Q128JVS
 $FPLIST
  SOIC*5.23x5.23mm*P1.27mm*
 $ENDFPLIST
@@ -607,32 +608,11 @@ X VOUT 5 400 100 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# Regulator_Linear_TLV70212_SOT23-5
+# SingularitySurfer_V1-rescue_AD8253-SingularitySurfer
 #
-DEF Regulator_Linear_TLV70212_SOT23-5 U 0 10 Y Y 1 F N
-F0 "U" -150 225 50 H V C CNN
-F1 "Regulator_Linear_TLV70212_SOT23-5" 0 225 50 H V L CNN
-F2 "Package_TO_SOT_SMD:SOT-23-5" 0 325 50 H I C CIN
-F3 "" 0 50 50 H I C CNN
-ALIAS TLV70013_SOT23-5 TLV70015_SOT23-5 TLV70018_SOT23-5 TLV70019_SOT23-5 TLV70025_SOT23-5 TLV70030_SOT23-5 TLV70032_SOT23-5 TLV70033_SOT23-5 TLV70036_SOT23-5 TLV70212_SOT23-5 TLV70215_SOT23-5 TLV70218_SOT23-5 TLV70225_SOT23-5 TLV70228_SOT23-5 TLV70230_SOT23-5 TLV70231_SOT23-5 TLV70233_SOT23-5 TLV70235_SOT23-5 TLV70237_SOT23-5 TLV70245_SOT23-5 TLV702475_SOT23-5
-$FPLIST
- SOT?23*
-$ENDFPLIST
-DRAW
-S -200 175 200 -200 0 1 10 f
-X IN 1 -300 100 100 R 50 50 1 1 W
-X GND 2 0 -300 100 U 50 50 1 1 W
-X EN 3 -300 0 100 R 50 50 1 1 I
-X NC 4 300 0 100 L 50 50 1 1 N N
-X OUT 5 300 100 100 L 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
-# SingularitySurfer_AD8253
-#
-DEF SingularitySurfer_AD8253 U 0 40 Y Y 1 F N
+DEF SingularitySurfer_V1-rescue_AD8253-SingularitySurfer U 0 40 Y Y 1 F N
 F0 "U" -50 -250 50 H V C CNN
-F1 "SingularitySurfer_AD8253" 0 300 50 H V C CNN
+F1 "SingularitySurfer_V1-rescue_AD8253-SingularitySurfer" 0 300 50 H V C CNN
 F2 "" -50 0 50 H I C CNN
 F3 "" -50 0 50 H I C CNN
 DRAW
@@ -650,11 +630,11 @@ X REF 9 400 100 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# SingularitySurfer_AD8675
+# SingularitySurfer_V1-rescue_AD8675-SingularitySurfer
 #
-DEF SingularitySurfer_AD8675 U 0 5 Y Y 1 F N
+DEF SingularitySurfer_V1-rescue_AD8675-SingularitySurfer U 0 5 Y Y 1 F N
 F0 "U" 0 250 50 H V L CNN
-F1 "SingularitySurfer_AD8675" 0 150 50 H V L CNN
+F1 "SingularitySurfer_V1-rescue_AD8675-SingularitySurfer" 0 150 50 H V L CNN
 F2 "" 50 50 50 H I C CNN
 F3 "" 150 150 50 H I C CNN
 DRAW
@@ -670,14 +650,13 @@ X NC 8 0 100 100 D 50 50 1 1 N N
 ENDDRAW
 ENDDEF
 #
-# SingularitySurfer_AP2114-1.8
+# SingularitySurfer_V1-rescue_AP2114-1.8-SingularitySurfer
 #
-DEF SingularitySurfer_AP2114-1.8 U 0 10 Y Y 1 F N
+DEF SingularitySurfer_V1-rescue_AP2114-1.8-SingularitySurfer U 0 10 Y Y 1 F N
 F0 "U" -150 125 50 H V C CNN
-F1 "SingularitySurfer_AP2114-1.8" 0 125 50 H V L CNN
+F1 "SingularitySurfer_V1-rescue_AP2114-1.8-SingularitySurfer" 0 125 50 H V L CNN
 F2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" 0 200 50 H I C CNN
 F3 "" 100 -250 50 H I C CNN
-ALIAS AP2114-1.8
 $FPLIST
  TO?252*TabPin2*
 $ENDFPLIST
@@ -689,11 +668,11 @@ X VOUT 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# SingularitySurfer_BD81870EFV
+# SingularitySurfer_V1-rescue_BD81870EFV-SingularitySurfer
 #
-DEF SingularitySurfer_BD81870EFV U 0 40 Y Y 1 F N
+DEF SingularitySurfer_V1-rescue_BD81870EFV-SingularitySurfer U 0 40 Y Y 1 F N
 F0 "U" 0 550 50 H V C CNN
-F1 "SingularitySurfer_BD81870EFV" 0 -650 50 H V C CNN
+F1 "SingularitySurfer_V1-rescue_BD81870EFV-SingularitySurfer" 0 -650 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -721,11 +700,11 @@ X DIS1 9 500 300 100 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# SingularitySurfer_MCP33131D
+# SingularitySurfer_V1-rescue_MCP33131D-SingularitySurfer
 #
-DEF SingularitySurfer_MCP33131D U 0 40 Y Y 1 F N
+DEF SingularitySurfer_V1-rescue_MCP33131D-SingularitySurfer U 0 40 Y Y 1 F N
 F0 "U" 0 -350 50 H V C CNN
-F1 "SingularitySurfer_MCP33131D" 0 350 50 H V C CNN
+F1 "SingularitySurfer_V1-rescue_MCP33131D-SingularitySurfer" 0 350 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -740,6 +719,26 @@ X CONVST 6 400 -200 100 L 50 50 1 1 I
 X SDO 7 400 -100 100 L 50 50 1 1 O
 X SCLK 8 400 0 100 L 50 50 1 1 I
 X SDI 9 400 100 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# SingularitySurfer_V1-rescue_TLV70212_SOT23-5-Regulator_Linear
+#
+DEF SingularitySurfer_V1-rescue_TLV70212_SOT23-5-Regulator_Linear U 0 10 Y Y 1 F N
+F0 "U" -150 225 50 H V C CNN
+F1 "SingularitySurfer_V1-rescue_TLV70212_SOT23-5-Regulator_Linear" 0 225 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23-5" 0 325 50 H I C CIN
+F3 "" 0 50 50 H I C CNN
+$FPLIST
+ SOT?23*
+$ENDFPLIST
+DRAW
+S -200 175 200 -200 0 1 10 f
+X IN 1 -300 100 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X EN 3 -300 0 100 R 50 50 1 1 I
+X NC 4 300 0 100 L 50 50 1 1 N N
+X OUT 5 300 100 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #

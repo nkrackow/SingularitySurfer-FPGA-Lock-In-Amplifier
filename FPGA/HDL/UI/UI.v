@@ -23,10 +23,11 @@ module UI (
   input [16:0] Ang,
 
   output reg [1:0] gain=0,
-  output reg [3:0] TC=6,
+  output reg [2:0] TC=6,
   output reg [2:0] reffreq=1,
   output reg [1:0] refampl=0,
-  output reg refIO=0
+  output reg refIO=0,
+  output reg ismagphase=0
 
   );
 
@@ -64,7 +65,6 @@ module UI (
 
 
   //substate logic
-  reg ismagphase=0;
   reg[7:0] datS=0;
   reg weS=0, repaintS=0;
   reg [4:0] disppos=0;
@@ -187,8 +187,14 @@ module UI (
             // if(TC>4'he) datS<=8'b00110000;//0
             // if(TC==4'he) datS<=8'b00110001;//1
           end
-          5'h13:begin
-            datS<={4'b0011,TC};
+          5'h19:begin
+            datS<=8'b00110010;//2
+          end
+          5'h1a:begin
+            datS<=8'b01011110;//^
+          end
+          5'h1b:begin
+            datS<={5'b00110,TC};
             // datS<=8'b00100000;//_
             // if(TC>4'hd) datS<=8'b00110000;//0
             // if(TC==4'hd) datS<=8'b00110001;//1

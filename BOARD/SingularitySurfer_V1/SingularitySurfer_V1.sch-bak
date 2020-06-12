@@ -1570,10 +1570,6 @@ Wire Wire Line
 	10800 2000 10800 2100
 Wire Wire Line
 	10800 2100 10550 2100
-Text GLabel 2450 6500 1    50   Input ~ 0
-+8V
-Text GLabel 2450 7100 3    50   Input ~ 0
--8V
 Connection ~ 10050 5700
 Wire Wire Line
 	9250 5700 10050 5700
@@ -1656,4 +1652,8 @@ F 3 "" H 5900 7450 50  0001 C CNN
 $EndComp
 NoConn ~ 1700 4600
 NoConn ~ 1700 4700
+Text GLabel 2450 6500 1    50   Input ~ 0
++8V
+Text GLabel 2450 7100 3    50   Input ~ 0
+-8V
 $EndSCHEMATC

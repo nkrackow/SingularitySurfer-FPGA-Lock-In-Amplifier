@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name SingularitySurfer_V1-rescue)(type Legacy)(uri ${KIPRJMOD}/SingularitySurfer_V1-rescue.lib)(options "")(descr ""))
+)

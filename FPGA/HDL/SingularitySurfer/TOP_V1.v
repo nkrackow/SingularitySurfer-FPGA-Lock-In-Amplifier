@@ -77,6 +77,7 @@ wire[3:0] TC;
 wire[2:0] reffreqset;
 wire[1:0] refamplset;
 wire refIO;
+wire ismagphase;
 wire[3:0] debug;
 
 
@@ -84,7 +85,7 @@ wire[3:0] debug;
 wire [17:0] oscphase,phase,pllphase;
 wire signed [31:0] X,Y;
 wire[16:0] Mag,Ang;    //17 bits beacuse of sign bit (cordic core)
-wire signed [15:0] sin,cos,sinpos;    // sin and cos from DDS core
+wire signed [15:0] sin,cos;    // sin and cos from DDS core
 wire signed [15:0] adcdata;    // raw adc samples
 wire signed [31:0] sinmod,cosmod;   // sin and cos modulated signals
 
@@ -102,7 +103,6 @@ assign LCD_RW=0;    // LCD in write only mode
 
 assign {wen,addr}= busy ? {wen_w,addr_w} : {1'b0,addr_r};
 
-assign sinpos={!sin[15],sin[14:0]};
 
 assign phase= refIO ? pllphase : oscphase ;
 
@@ -110,6 +110,7 @@ assign phase= refIO ? pllphase : oscphase ;
 assign clipping=(!adcdata[15]&&(&adcdata[14:11]))||(adcdata[15]&&(&~adcdata[14:11]));
 
 
+// LED assigns
 assign {A1,A0}=gain;
 assign L2=|adcdata;
 assign L1=islocked;
@@ -154,7 +155,8 @@ UI UI_inst (
   TC,
   reffreqset,
   refamplset,
-  refIO
+  refIO,
+  ismagphase
 
   );
 
@@ -192,19 +194,19 @@ dds DDS(
 
 sigma_delta DAC1(
   CLK36,
-  {~X[31],X[30:16]},
+  ismagphase ? Mag : {~X[31],X[30:16]},
   X_R
   );
 
 sigma_delta DAC2(
   CLK36,
-  {~sinmod[31],sinmod[30:16]},
+  ismagphase ? Ang : {~Y[31],Y[30:16]},
   Y_T
   );
 
 sigma_delta DAC3(
   CLK36,
-  (sinpos>>refamplset),
+  ({!sin[15],sin[14:0]}>>refamplset),
   REFOUT
   );
 
@@ -240,8 +242,8 @@ CIC Filter1(
   sinmod,
   X
 );
-defparam Filter1.rate=32;
-defparam Filter1.log2rate=5;
+defparam Filter1.rate=1024;
+defparam Filter1.log2rate=10;
 
 
 CIC Filter2(
@@ -251,8 +253,8 @@ CIC Filter2(
   cosmod,
   Y
 );
-defparam Filter2.rate=32;
-defparam Filter2.log2rate=5;
+defparam Filter2.rate=1024;
+defparam Filter2.log2rate=10;
 
 
 fullcordic CORDIC(

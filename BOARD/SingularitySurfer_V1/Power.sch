@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:SingularitySurfer_V1-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -42,7 +41,7 @@ Wire Wire Line
 	1500 2200 1500 2450
 Connection ~ 1500 2200
 $Comp
-L SingularitySurfer:BD81870EFV U1
+L SingularitySurfer_V1-rescue:BD81870EFV-SingularitySurfer U1
 U 1 1 5D892AFE
 P 4100 2900
 F 0 "U1" H 4125 3565 50  0000 C CNN
@@ -379,7 +378,7 @@ F 3 "" H 3550 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:TLV70212_SOT23-5 U3
+L SingularitySurfer_V1-rescue:TLV70212_SOT23-5-Regulator_Linear U3
 U 1 1 5D8B29B2
 P 7950 1700
 F 0 "U3" H 7950 2042 50  0000 C CNN
@@ -1254,7 +1253,7 @@ Connection ~ 9550 5450
 Wire Wire Line
 	9550 5450 9300 5450
 $Comp
-L SingularitySurfer:AP2114-1.8 U14
+L SingularitySurfer_V1-rescue:AP2114-1.8-SingularitySurfer U14
 U 1 1 5DAF3A03
 P 5000 4250
 F 0 "U14" H 5000 4492 50  0000 C CNN
