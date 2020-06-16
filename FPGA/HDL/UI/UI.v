@@ -23,7 +23,7 @@ module UI (
   input [16:0] Ang,
 
   output reg [1:0] gain=0,
-  output reg [2:0] TC=6,
+  output reg [3:0] TC=3,
   output reg [2:0] reffreq=1,
   output reg [1:0] refampl=0,
   output reg refIO=0,
@@ -194,7 +194,7 @@ module UI (
             datS<=8'b01011110;//^
           end
           5'h1b:begin
-            datS<={5'b00110,TC};
+            datS<={4'b0011,TC};
             // datS<=8'b00100000;//_
             // if(TC>4'hd) datS<=8'b00110000;//0
             // if(TC==4'hd) datS<=8'b00110001;//1

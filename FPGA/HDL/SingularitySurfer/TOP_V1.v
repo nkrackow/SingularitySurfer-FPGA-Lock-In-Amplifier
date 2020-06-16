@@ -65,7 +65,6 @@ module top (
 
 
  //basics
-wire clipping;
 reg rst=1;
 reg[24:0] cnt=0;
 wire tick;
@@ -78,12 +77,11 @@ wire[2:0] reffreqset;
 wire[1:0] refamplset;
 wire refIO;
 wire ismagphase;
-wire[3:0] debug;
 
 
 // DSP Signals
 wire [17:0] oscphase,phase,pllphase;
-wire signed [31:0] X,Y;
+wire signed [31:0] X,Y;//,X1,Y1;
 wire[16:0] Mag,Ang;    //17 bits beacuse of sign bit (cordic core)
 wire signed [15:0] sin,cos;    // sin and cos from DDS core
 wire signed [15:0] adcdata;    // raw adc samples
@@ -98,6 +96,7 @@ wire[15:0] addr,wdata,dout,addr_r,addr_w;
 // Basic assigns
 assign SDI=1'b1;    // SUPER IMPORTANT, ADC IS DISABLED IF NOT HIGH
 assign LCD_RW=0;    // LCD in write only mode
+assign {A1,A0}=gain;
 
 //assign Y=cnt;
 
@@ -106,15 +105,13 @@ assign {wen,addr}= busy ? {wen_w,addr_w} : {1'b0,addr_r};
 
 assign phase= refIO ? pllphase : oscphase ;
 
-// assert clipping if adcdata mag very big
-assign clipping=(!adcdata[15]&&(&adcdata[14:11]))||(adcdata[15]&&(&~adcdata[14:11]));
-
 
 // LED assigns
-assign {A1,A0}=gain;
-assign L2=|adcdata;
+
+assign L2=|Mag[16:10];
 assign L1=islocked;
-assign L0=clipping;
+// assert clipping if adcdata mag very big
+assign L0=(!adcdata[15]&&(&adcdata[14:11]))||(adcdata[15]&&(&~adcdata[14:11]));
 assign L3=cnt[22];
 
 
@@ -194,13 +191,13 @@ dds DDS(
 
 sigma_delta DAC1(
   CLK36,
-  ismagphase ? Mag : {~X[31],X[30:16]},
+  ismagphase ? Mag[16:1] : {~X[31],X[30:16]},
   X_R
   );
 
 sigma_delta DAC2(
   CLK36,
-  ismagphase ? Ang : {~Y[31],Y[30:16]},
+  ismagphase ? Ang[16:1] : {~Y[31],Y[30:16]},
   Y_T
   );
 
@@ -209,7 +206,6 @@ sigma_delta DAC3(
   ({!sin[15],sin[14:0]}>>refamplset),
   REFOUT
   );
-
 
 adc_host ADC(
   CLK36,
@@ -235,26 +231,49 @@ mult16x16 Mult2(
   cosmod
   );
 
-CIC Filter1(
-  CLK36,
-  newdata,
-  TC,
+
+// old and crappy CIC
+// CIC Filter1(
+//   CLK36,
+//   newdata,
+//   TC,
+//   sinmod,
+//   X
+// );
+// defparam Filter1.rate=1024;
+// defparam Filter1.log2rate=10;
+//
+//
+// CIC Filter2(
+//   CLK36,
+//   newdata,
+//   TC,
+//   cosmod,
+//   Y
+// );
+// defparam Filter2.rate=1024;
+// defparam Filter2.log2rate=10;
+
+
+
+// New and shiny robert style IIR filters
+RIIR X_IIR_1(
   sinmod,
-  X
-);
-defparam Filter1.rate=1024;
-defparam Filter1.log2rate=10;
-
-
-CIC Filter2(
-  CLK36,
+  X,
+  {TC,1'b0},
   newdata,
-  TC,
+  CLK36
+  );
+
+
+
+RIIR Y_IIR_1(
   cosmod,
-  Y
-);
-defparam Filter2.rate=1024;
-defparam Filter2.log2rate=10;
+  Y,
+  {TC,1'b0},
+  newdata,
+  CLK36
+  );
 
 
 fullcordic CORDIC(

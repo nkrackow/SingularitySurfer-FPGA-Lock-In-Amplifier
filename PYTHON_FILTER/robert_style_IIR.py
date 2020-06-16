@@ -27,10 +27,10 @@ TC=np.empty(max)    # time constants
 for l in range(max):
     
     # H(z)=B/A=2**-l/(z-(1-2**l)) # first order
-    #b=[2**-l,0]            # first order
-    #a=[1,-(1-(2**-l))]     # first order
-    b=[2**-(2*l),0,0]           # second order
-    a=[1,-2*(1-2**-l),(1-2**-l)**2]         # second order
+    b=[2**-l,0]            # first order
+    a=[1,-(1-(2**-l))]     # first order
+    # b=[2**-(2*l),0,0]           # second order
+    # a=[1,-2*(1-2**-l),(1-2**-l)**2]         # second order
     
    
     
@@ -43,7 +43,7 @@ for l in range(max):
     plt.figure(1)
     zplane(b,a)
     
-    fc[l]=fHz[np.argmin(abs(Hf+6))]
+    fc[l]=fHz[np.argmin(abs(Hf+3))]
     TC[l]=1/(2*np.pi*fc[l])
     print(f"2^{l}:   fc= {fc[l]}Hz    TC={TC[l]} sec ")
 
