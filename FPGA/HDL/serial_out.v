@@ -24,7 +24,6 @@ module serial_out (
       miso<=data[dcount];
       dcount<=dcount-1;   //underflows
       if(dcount==0) addr<=addr+1;      //overflows at 65536 (2^16)
-      if(dcount==15) miso<=data[dcount];
     end
 
 

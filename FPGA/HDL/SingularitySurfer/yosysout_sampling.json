@@ -1009,7 +1009,7 @@
         }
       },
       "cells": {
-        "$logic_and$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$141": {
+        "$logic_and$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$139": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -1033,7 +1033,7 @@
             "Y": [ 6 ]
           }
         },
-        "$logic_and$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$143": {
+        "$logic_and$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$141": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -1057,7 +1057,7 @@
             "Y": [ 8 ]
           }
         },
-        "$logic_or$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$142": {
+        "$logic_or$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$140": {
           "hide_name": 1,
           "type": "$logic_or",
           "parameters": {
@@ -1081,7 +1081,7 @@
             "Y": [ 7 ]
           }
         },
-        "$logic_or$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$144": {
+        "$logic_or$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$142": {
           "hide_name": 1,
           "type": "$logic_or",
           "parameters": {
@@ -1107,28 +1107,28 @@
         }
       },
       "netnames": {
-        "$logic_and$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$141_Y": {
+        "$logic_and$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$139_Y": {
           "hide_name": 1,
           "bits": [ 6 ],
           "attributes": {
             "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181"
           }
         },
-        "$logic_and$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$143_Y": {
+        "$logic_and$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$141_Y": {
           "hide_name": 1,
           "bits": [ 8 ],
           "attributes": {
             "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181"
           }
         },
-        "$logic_or$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$142_Y": {
+        "$logic_or$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$140_Y": {
           "hide_name": 1,
           "bits": [ 7 ],
           "attributes": {
             "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181"
           }
         },
-        "$logic_or$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$144_Y": {
+        "$logic_or$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:181$142_Y": {
           "hide_name": 1,
           "bits": [ 2 ],
           "attributes": {
@@ -3899,7 +3899,7 @@
         }
       },
       "cells": {
-        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:173$137": {
+        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:173$135": {
           "hide_name": 1,
           "type": "$mux",
           "parameters": {
@@ -3921,7 +3921,7 @@
             "Y": [ 7, 8, 9, 10, 11, 12, 13, 14 ]
           }
         },
-        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:174$138": {
+        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:174$136": {
           "hide_name": 1,
           "type": "$mux",
           "parameters": {
@@ -3943,7 +3943,7 @@
             "Y": [ 15, 16, 17, 18 ]
           }
         },
-        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:175$139": {
+        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:175$137": {
           "hide_name": 1,
           "type": "$mux",
           "parameters": {
@@ -3965,7 +3965,7 @@
             "Y": [ 19, 20 ]
           }
         },
-        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:176$140": {
+        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:176$138": {
           "hide_name": 1,
           "type": "$mux",
           "parameters": {
@@ -3989,28 +3989,28 @@
         }
       },
       "netnames": {
-        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:173$137_Y": {
+        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:173$135_Y": {
           "hide_name": 1,
           "bits": [ 7, 8, 9, 10, 11, 12, 13, 14 ],
           "attributes": {
             "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:173"
           }
         },
-        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:174$138_Y": {
+        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:174$136_Y": {
           "hide_name": 1,
           "bits": [ 15, 16, 17, 18 ],
           "attributes": {
             "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:174"
           }
         },
-        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:175$139_Y": {
+        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:175$137_Y": {
           "hide_name": 1,
           "bits": [ 19, 20 ],
           "attributes": {
             "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:175"
           }
         },
-        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:176$140_Y": {
+        "$ternary$/home/norman/anaconda3/bin/../share/yosys/ice40/cells_sim.v:176$138_Y": {
           "hide_name": 1,
           "bits": [ 2 ],
           "attributes": {
@@ -8488,7 +8488,7 @@
             "I1": [ "0" ],
             "I2": [ "0" ],
             "I3": [ 137 ],
-            "O": [ 130 ]
+            "O": [ 134 ]
           }
         },
         "SPI_not_really.dcount_SB_LUT4_O_1": {
@@ -8513,7 +8513,7 @@
             "I1": [ "0" ],
             "I2": [ "0" ],
             "I3": [ 138 ],
-            "O": [ 134 ]
+            "O": [ 132 ]
           }
         },
         "SPI_not_really.dcount_SB_LUT4_O_2": {
@@ -8538,7 +8538,7 @@
             "I1": [ "0" ],
             "I2": [ "0" ],
             "I3": [ 139 ],
-            "O": [ 132 ]
+            "O": [ 130 ]
           }
         },
         "SPI_not_really.done_SB_DFF_Q": {
@@ -8772,7 +8772,7 @@
             "C": [ 2 ],
             "D": [ 135 ],
             "E": [ 147 ],
-            "Q": [ 138 ]
+            "Q": [ 137 ]
           }
         },
         "SPI_not_really.last_last_sclk_SB_LUT4_I3_O_SB_DFFE_E_2": {
@@ -8794,7 +8794,7 @@
             "C": [ 2 ],
             "D": [ 136 ],
             "E": [ 147 ],
-            "Q": [ 139 ]
+            "Q": [ 138 ]
           }
         },
         "SPI_not_really.last_last_sclk_SB_LUT4_I3_O_SB_DFFE_E_3": {
@@ -8816,7 +8816,7 @@
             "C": [ 2 ],
             "D": [ 130 ],
             "E": [ 147 ],
-            "Q": [ 137 ]
+            "Q": [ 139 ]
           }
         },
         "SPI_not_really.last_last_sclk_SB_LUT4_I3_O_SB_DFFE_E_D_SB_LUT4_O": {
@@ -8848,11 +8848,11 @@
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "1111000000000000"
+            "LUT_INIT": "1100000000000000"
           },
           "attributes": {
             "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:46"
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
           },
           "port_directions": {
             "I0": "input",
@@ -8863,7 +8863,7 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ "0" ],
+            "I1": [ 139 ],
             "I2": [ 150 ],
             "I3": [ 147 ],
             "O": [ 113 ]
@@ -8873,11 +8873,11 @@
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "1000000000000000"
+            "LUT_INIT": "1100000000000000"
           },
           "attributes": {
             "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
           },
           "port_directions": {
             "I0": "input",
@@ -8887,10 +8887,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 137 ],
+            "I0": [ "0" ],
             "I1": [ 149 ],
-            "I2": [ 138 ],
-            "I3": [ 139 ],
+            "I2": [ 137 ],
+            "I3": [ 138 ],
             "O": [ 150 ]
           }
         },
@@ -8940,7 +8940,7 @@
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0101000100010001"
+            "LUT_INIT": "1010001000100010"
           },
           "attributes": {
             "module_not_derived": 1,
@@ -8965,7 +8965,7 @@
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "1010001000100010"
+            "LUT_INIT": "1111111111110111"
           },
           "attributes": {
             "module_not_derived": 1,
@@ -8982,115 +8982,15 @@
             "I0": [ 156 ],
             "I1": [ 157 ],
             "I2": [ 158 ],
-            "I3": [ 159 ],
+            "I3": [ 139 ],
             "O": [ 152 ]
           }
         },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I0_SB_LUT4_O": {
+        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I1_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0001000100010101"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 137 ],
-            "I1": [ 160 ],
-            "I2": [ 161 ],
-            "I3": [ 162 ],
-            "O": [ 156 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000001000010011"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 138 ],
-            "I1": [ 139 ],
-            "I2": [ 163 ],
-            "I3": [ 164 ],
-            "O": [ 161 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000110000111111"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 149 ],
-            "I2": [ 165 ],
-            "I3": [ 166 ],
-            "O": [ 163 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000110000111111"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 149 ],
-            "I2": [ 167 ],
-            "I3": [ 168 ],
-            "O": [ 164 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000100000101010"
+            "LUT_INIT": "0000001000100010"
           },
           "attributes": {
             "module_not_derived": 1,
@@ -9105,467 +9005,17 @@
           },
           "connections": {
             "I0": [ 139 ],
-            "I1": [ 138 ],
-            "I2": [ 169 ],
-            "I3": [ 170 ],
-            "O": [ 162 ]
+            "I1": [ 159 ],
+            "I2": [ 160 ],
+            "I3": [ 161 ],
+            "O": [ 153 ]
           }
         },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O": {
+        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0000110000111111"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 149 ],
-            "I2": [ 171 ],
-            "I3": [ 172 ],
-            "O": [ 169 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000110000111111"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 149 ],
-            "I2": [ 173 ],
-            "I3": [ 174 ],
-            "O": [ 170 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0100010001000101"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 160 ],
-            "I1": [ 139 ],
-            "I2": [ 175 ],
-            "I3": [ 176 ],
-            "O": [ 157 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000100011011000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 177 ],
-            "I1": [ 178 ],
-            "I2": [ 179 ],
-            "I3": [ 180 ],
-            "O": [ 175 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000101010011011"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 181 ],
-            "I1": [ 138 ],
-            "I2": [ 182 ],
-            "I3": [ 183 ],
-            "O": [ 178 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0010101001101110"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 149 ],
-            "I1": [ 138 ],
-            "I2": [ 184 ],
-            "I3": [ 185 ],
-            "O": [ 181 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000101010011011"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 186 ],
-            "I1": [ 138 ],
-            "I2": [ 187 ],
-            "I3": [ 188 ],
-            "O": [ 179 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0010101001101110"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 149 ],
-            "I1": [ 138 ],
-            "I2": [ 189 ],
-            "I3": [ 190 ],
-            "O": [ 186 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1010001010000000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 191 ],
-            "I1": [ 149 ],
-            "I2": [ 192 ],
-            "I3": [ 193 ],
-            "O": [ 176 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000110000111111"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 138 ],
-            "I2": [ 194 ],
-            "I3": [ 195 ],
-            "O": [ 192 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000110000111111"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 138 ],
-            "I2": [ 196 ],
-            "I3": [ 197 ],
-            "O": [ 193 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000100000101010"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 139 ],
-            "I1": [ 138 ],
-            "I2": [ 198 ],
-            "I3": [ 199 ],
-            "O": [ 158 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0011000100100000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 149 ],
-            "I1": [ 191 ],
-            "I2": [ 200 ],
-            "I3": [ 201 ],
-            "O": [ 198 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111001011010000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 177 ],
-            "I1": [ 180 ],
-            "I2": [ 202 ],
-            "I3": [ 203 ],
-            "O": [ 200 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111001011010000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 177 ],
-            "I1": [ 180 ],
-            "I2": [ 204 ],
-            "I3": [ 205 ],
-            "O": [ 201 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000100100011"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 149 ],
-            "I1": [ 191 ],
-            "I2": [ 206 ],
-            "I3": [ 207 ],
-            "O": [ 199 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000110100101111"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 177 ],
-            "I1": [ 180 ],
-            "I2": [ 208 ],
-            "I3": [ 209 ],
-            "O": [ 206 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000110100101111"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 177 ],
-            "I1": [ 180 ],
-            "I2": [ 210 ],
-            "I3": [ 211 ],
-            "O": [ 207 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111111111111"
+            "LUT_INIT": "0000000011110000"
           },
           "attributes": {
             "module_not_derived": 1,
@@ -9581,216 +9031,16 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 191 ],
-            "I3": [ 212 ],
-            "O": [ 159 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1011100110101000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 213 ],
-            "I1": [ 138 ],
-            "I2": [ 214 ],
-            "I3": [ 215 ],
-            "O": [ 212 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1110011010100010"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 149 ],
-            "I1": [ 138 ],
-            "I2": [ 216 ],
-            "I3": [ 217 ],
-            "O": [ 213 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I1_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1100000011001100"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 137 ],
-            "I2": [ 218 ],
-            "I3": [ 160 ],
-            "O": [ 153 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1110111011100100"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 139 ],
-            "I1": [ 219 ],
-            "I2": [ 220 ],
-            "I3": [ 221 ],
-            "O": [ 218 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000101010011011"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 222 ],
-            "I1": [ 138 ],
-            "I2": [ 223 ],
-            "I3": [ 224 ],
-            "O": [ 219 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0010101001101110"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 149 ],
-            "I1": [ 138 ],
-            "I2": [ 225 ],
-            "I3": [ 226 ],
-            "O": [ 222 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000100000101010"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 138 ],
-            "I1": [ 149 ],
-            "I2": [ 227 ],
-            "I3": [ 228 ],
-            "O": [ 220 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000001000010011"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 149 ],
-            "I1": [ 138 ],
-            "I2": [ 229 ],
-            "I3": [ 230 ],
-            "O": [ 221 ]
+            "I2": [ 138 ],
+            "I3": [ 137 ],
+            "O": [ 160 ]
           }
         },
         "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "1111110111101100"
+            "LUT_INIT": "1101111111001110"
           },
           "attributes": {
             "module_not_derived": 1,
@@ -9804,111 +9054,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 139 ],
-            "I1": [ 138 ],
-            "I2": [ 231 ],
-            "I3": [ 232 ],
+            "I0": [ 137 ],
+            "I1": [ 162 ],
+            "I2": [ 163 ],
+            "I3": [ 164 ],
             "O": [ 154 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1010001110100001"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 233 ],
-            "I1": [ 234 ],
-            "I2": [ 149 ],
-            "I3": [ 235 ],
-            "O": [ 231 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0011101000011010"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 191 ],
-            "I1": [ 236 ],
-            "I2": [ 149 ],
-            "I3": [ 237 ],
-            "O": [ 233 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000100100101011"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 177 ],
-            "I1": [ 180 ],
-            "I2": [ 238 ],
-            "I3": [ 239 ],
-            "O": [ 236 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000100100101011"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 177 ],
-            "I1": [ 180 ],
-            "I2": [ 240 ],
-            "I3": [ 241 ],
-            "O": [ 234 ]
           }
         },
         "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O": {
@@ -9929,10 +9079,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 160 ],
-            "I1": [ 138 ],
-            "I2": [ 242 ],
-            "I3": [ 243 ],
+            "I0": [ 138 ],
+            "I1": [ 162 ],
+            "I2": [ 165 ],
+            "I3": [ 166 ],
             "O": [ 155 ]
           }
         },
@@ -9940,32 +9090,7 @@
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0011001100000011"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 139 ],
-            "I2": [ 244 ],
-            "I3": [ 245 ],
-            "O": [ 242 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0100110101101111"
+            "LUT_INIT": "0011000100100000"
           },
           "attributes": {
             "module_not_derived": 1,
@@ -9979,64 +9104,14 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 177 ],
-            "I1": [ 180 ],
-            "I2": [ 246 ],
-            "I3": [ 247 ],
-            "O": [ 244 ]
+            "I0": [ 149 ],
+            "I1": [ 137 ],
+            "I2": [ 167 ],
+            "I3": [ 168 ],
+            "O": [ 165 ]
           }
         },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111001111000000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 149 ],
-            "I2": [ 248 ],
-            "I3": [ 249 ],
-            "O": [ 246 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111001111000000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 149 ],
-            "I2": [ 250 ],
-            "I3": [ 251 ],
-            "O": [ 247 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O": {
+        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -10054,136 +9129,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 191 ],
+            "I0": [ 137 ],
             "I1": [ 149 ],
-            "I2": [ 252 ],
-            "I3": [ 253 ],
-            "O": [ 245 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1010100000100000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 139 ],
-            "I1": [ 191 ],
-            "I2": [ 254 ],
-            "I3": [ 255 ],
-            "O": [ 243 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111001111000000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 149 ],
-            "I2": [ 256 ],
-            "I3": [ 257 ],
-            "O": [ 254 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111001011010000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 177 ],
-            "I1": [ 180 ],
-            "I2": [ 258 ],
-            "I3": [ 259 ],
-            "O": [ 256 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111001011010000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 177 ],
-            "I1": [ 180 ],
-            "I2": [ 260 ],
-            "I3": [ 261 ],
-            "O": [ 257 ]
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111001111000000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 149 ],
-            "I2": [ 262 ],
-            "I3": [ 263 ],
-            "O": [ 255 ]
+            "I2": [ 169 ],
+            "I3": [ 170 ],
+            "O": [ 166 ]
           }
         },
         "SRAM.addr_SB_LUT4_O": {
@@ -10205,10 +9155,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 265 ],
+            "I1": [ 171 ],
+            "I2": [ 172 ],
             "I3": [ 111 ],
-            "O": [ 266 ]
+            "O": [ 173 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_1": {
@@ -10230,10 +9180,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 267 ],
+            "I1": [ 171 ],
+            "I2": [ 174 ],
             "I3": [ 93 ],
-            "O": [ 268 ]
+            "O": [ 175 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_10": {
@@ -10255,10 +9205,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 269 ],
+            "I1": [ 171 ],
+            "I2": [ 176 ],
             "I3": [ 106 ],
-            "O": [ 270 ]
+            "O": [ 177 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_11": {
@@ -10280,10 +9230,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 271 ],
+            "I1": [ 171 ],
+            "I2": [ 178 ],
             "I3": [ 107 ],
-            "O": [ 272 ]
+            "O": [ 179 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_12": {
@@ -10305,10 +9255,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 273 ],
+            "I1": [ 171 ],
+            "I2": [ 180 ],
             "I3": [ 85 ],
-            "O": [ 274 ]
+            "O": [ 181 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_13": {
@@ -10330,10 +9280,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 275 ],
+            "I1": [ 171 ],
+            "I2": [ 182 ],
             "I3": [ 83 ],
-            "O": [ 276 ]
+            "O": [ 183 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_2": {
@@ -10355,10 +9305,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 277 ],
+            "I1": [ 171 ],
+            "I2": [ 184 ],
             "I3": [ 95 ],
-            "O": [ 278 ]
+            "O": [ 185 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_3": {
@@ -10380,10 +9330,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 279 ],
+            "I1": [ 171 ],
+            "I2": [ 186 ],
             "I3": [ 96 ],
-            "O": [ 280 ]
+            "O": [ 187 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_4": {
@@ -10405,10 +9355,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 281 ],
+            "I1": [ 171 ],
+            "I2": [ 188 ],
             "I3": [ 88 ],
-            "O": [ 282 ]
+            "O": [ 189 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_5": {
@@ -10430,10 +9380,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 283 ],
+            "I1": [ 171 ],
+            "I2": [ 190 ],
             "I3": [ 90 ],
-            "O": [ 284 ]
+            "O": [ 191 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_6": {
@@ -10455,10 +9405,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 285 ],
+            "I1": [ 171 ],
+            "I2": [ 192 ],
             "I3": [ 98 ],
-            "O": [ 286 ]
+            "O": [ 193 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_7": {
@@ -10480,10 +9430,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 287 ],
+            "I1": [ 171 ],
+            "I2": [ 194 ],
             "I3": [ 100 ],
-            "O": [ 288 ]
+            "O": [ 195 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_8": {
@@ -10505,10 +9455,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 289 ],
+            "I1": [ 171 ],
+            "I2": [ 196 ],
             "I3": [ 102 ],
-            "O": [ 290 ]
+            "O": [ 197 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_8_I2_SB_DFFE_Q": {
@@ -10528,9 +9478,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 291 ],
-            "E": [ 292 ],
-            "Q": [ 289 ]
+            "D": [ 198 ],
+            "E": [ 199 ],
+            "Q": [ 196 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_8_I2_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -10553,9 +9503,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 293 ],
-            "I3": [ 294 ],
-            "O": [ 291 ]
+            "I2": [ 200 ],
+            "I3": [ 201 ],
+            "O": [ 198 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_9": {
@@ -10577,10 +9527,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 264 ],
-            "I2": [ 295 ],
+            "I1": [ 171 ],
+            "I2": [ 202 ],
             "I3": [ 104 ],
-            "O": [ 296 ]
+            "O": [ 203 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_9_I2_SB_DFFE_Q": {
@@ -10600,9 +9550,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 297 ],
-            "E": [ 292 ],
-            "Q": [ 295 ]
+            "D": [ 204 ],
+            "E": [ 199 ],
+            "Q": [ 202 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_9_I2_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -10625,9 +9575,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 298 ],
-            "I3": [ 299 ],
-            "O": [ 297 ]
+            "I2": [ 205 ],
+            "I3": [ 206 ],
+            "O": [ 204 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_I2_SB_DFFE_Q": {
@@ -10647,9 +9597,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 300 ],
-            "E": [ 292 ],
-            "Q": [ 265 ]
+            "D": [ 207 ],
+            "E": [ 199 ],
+            "Q": [ 172 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_I2_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -10672,9 +9622,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 301 ],
-            "I3": [ 302 ],
-            "O": [ 300 ]
+            "I2": [ 208 ],
+            "I3": [ 209 ],
+            "O": [ 207 ]
           }
         },
         "SRAM.addr_SB_LUT4_O_I2_SB_LUT4_I1": {
@@ -10695,11 +9645,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 303 ],
-            "I1": [ 265 ],
-            "I2": [ 267 ],
-            "I3": [ 277 ],
-            "O": [ 304 ]
+            "I0": [ 210 ],
+            "I1": [ 172 ],
+            "I2": [ 174 ],
+            "I3": [ 184 ],
+            "O": [ 211 ]
           }
         },
         "SRAM.ram00": {
@@ -10724,16 +9674,16 @@
             "WREN": "input"
           },
           "connections": {
-            "ADDRESS": [ 276, 274, 272, 270, 296, 290, 288, 286, 284, 282, 280, 278, 268, 266 ],
-            "CHIPSELECT": [ 160 ],
+            "ADDRESS": [ 183, 181, 179, 177, 203, 197, 195, 193, 191, 189, 187, 185, 175, 173 ],
+            "CHIPSELECT": [ 162 ],
             "CLOCK": [ 2 ],
-            "DATAIN": [ 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320 ],
-            "DATAOUT": [ 227, 171, 225, 165, 229, 173, 223, 167, 228, 172, 226, 166, 230, 174, 224, 168 ],
+            "DATAIN": [ 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227 ],
+            "DATAOUT": [ 228, 229, 169, 230, 231, 232, 167, 233, 234, 235, 170, 236, 237, 238, 168, 239 ],
             "MASKWREN": [ "1", "1", "1", "1" ],
             "POWEROFF": [ "1" ],
             "SLEEP": [ "0" ],
             "STANDBY": [ "0" ],
-            "WREN": [ 321 ]
+            "WREN": [ 240 ]
           }
         },
         "SRAM.ram00_CHIPSELECT_SB_LUT4_O": {
@@ -10756,9 +9706,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 177 ],
-            "I3": [ 180 ],
-            "O": [ 160 ]
+            "I2": [ 241 ],
+            "I3": [ 242 ],
+            "O": [ 162 ]
           }
         },
         "SRAM.ram01": {
@@ -10783,16 +9733,16 @@
             "WREN": "input"
           },
           "connections": {
-            "ADDRESS": [ 276, 274, 272, 270, 296, 290, 288, 286, 284, 282, 280, 278, 268, 266 ],
-            "CHIPSELECT": [ 191 ],
+            "ADDRESS": [ 183, 181, 179, 177, 203, 197, 195, 193, 191, 189, 187, 185, 175, 173 ],
+            "CHIPSELECT": [ 243 ],
             "CLOCK": [ 2 ],
-            "DATAIN": [ 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320 ],
-            "DATAOUT": [ 262, 216, 252, 194, 237, 214, 322, 195, 263, 217, 253, 196, 235, 215, 323, 197 ],
+            "DATAIN": [ 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227 ],
+            "DATAOUT": [ 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259 ],
             "MASKWREN": [ "1", "1", "1", "1" ],
             "POWEROFF": [ "1" ],
             "SLEEP": [ "0" ],
             "STANDBY": [ "0" ],
-            "WREN": [ 321 ]
+            "WREN": [ 240 ]
           }
         },
         "SRAM.ram01_CHIPSELECT_SB_LUT4_O": {
@@ -10815,9 +9765,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 180 ],
-            "I3": [ 177 ],
-            "O": [ 191 ]
+            "I2": [ 242 ],
+            "I3": [ 241 ],
+            "O": [ 243 ]
           }
         },
         "SRAM.ram10": {
@@ -10842,116 +9792,16 @@
             "WREN": "input"
           },
           "connections": {
-            "ADDRESS": [ 276, 274, 272, 270, 296, 290, 288, 286, 284, 282, 280, 278, 268, 266 ],
-            "CHIPSELECT": [ 324 ],
+            "ADDRESS": [ 183, 181, 179, 177, 203, 197, 195, 193, 191, 189, 187, 185, 175, 173 ],
+            "CHIPSELECT": [ 260 ],
             "CLOCK": [ 2 ],
-            "DATAIN": [ 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320 ],
-            "DATAOUT": [ 259, 203, 250, 184, 239, 211, 325, 182, 261, 205, 251, 185, 241, 209, 326, 183 ],
+            "DATAIN": [ 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227 ],
+            "DATAOUT": [ 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276 ],
             "MASKWREN": [ "1", "1", "1", "1" ],
             "POWEROFF": [ "1" ],
             "SLEEP": [ "0" ],
             "STANDBY": [ "0" ],
-            "WREN": [ 321 ]
-          }
-        },
-        "SRAM.ram10_CHIPSELECT_SB_LUT4_I0": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0011000100100000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 324 ],
-            "I1": [ 149 ],
-            "I2": [ 326 ],
-            "I3": [ 327 ],
-            "O": [ 328 ]
-          }
-        },
-        "SRAM.ram10_CHIPSELECT_SB_LUT4_I1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1010001010000000"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 149 ],
-            "I1": [ 324 ],
-            "I2": [ 325 ],
-            "I3": [ 329 ],
-            "O": [ 330 ]
-          }
-        },
-        "SRAM.ram10_CHIPSELECT_SB_LUT4_I1_O_SB_LUT4_I2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0111011101110010"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 191 ],
-            "I1": [ 331 ],
-            "I2": [ 330 ],
-            "I3": [ 328 ],
-            "O": [ 232 ]
-          }
-        },
-        "SRAM.ram10_CHIPSELECT_SB_LUT4_I1_O_SB_LUT4_I2_I1_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000110000111111"
-          },
-          "attributes": {
-            "module_not_derived": 1,
-            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 149 ],
-            "I2": [ 322 ],
-            "I3": [ 323 ],
-            "O": [ 331 ]
+            "WREN": [ 240 ]
           }
         },
         "SRAM.ram10_CHIPSELECT_SB_LUT4_O": {
@@ -10974,9 +9824,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 177 ],
-            "I3": [ 180 ],
-            "O": [ 324 ]
+            "I2": [ 241 ],
+            "I3": [ 242 ],
+            "O": [ 260 ]
           }
         },
         "SRAM.ram11": {
@@ -11001,16 +9851,16 @@
             "WREN": "input"
           },
           "connections": {
-            "ADDRESS": [ 276, 274, 272, 270, 296, 290, 288, 286, 284, 282, 280, 278, 268, 266 ],
-            "CHIPSELECT": [ 332 ],
+            "ADDRESS": [ 183, 181, 179, 177, 203, 197, 195, 193, 191, 189, 187, 185, 175, 173 ],
+            "CHIPSELECT": [ 277 ],
             "CLOCK": [ 2 ],
-            "DATAIN": [ 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320 ],
-            "DATAOUT": [ 258, 202, 248, 189, 238, 210, 329, 187, 260, 204, 249, 190, 240, 208, 327, 188 ],
+            "DATAIN": [ 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227 ],
+            "DATAOUT": [ 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293 ],
             "MASKWREN": [ "1", "1", "1", "1" ],
             "POWEROFF": [ "1" ],
             "SLEEP": [ "0" ],
             "STANDBY": [ "0" ],
-            "WREN": [ 321 ]
+            "WREN": [ 240 ]
           }
         },
         "SRAM.ram11_CHIPSELECT_SB_LUT4_O": {
@@ -11033,9 +9883,1159 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 177 ],
-            "I3": [ 180 ],
+            "I2": [ 241 ],
+            "I3": [ 242 ],
+            "O": [ 277 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_10_SB_LUT4_I2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000001111001111"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 241 ],
+            "I2": [ 283 ],
+            "I3": [ 266 ],
+            "O": [ 294 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_1_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1011100110101000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 295 ],
+            "I1": [ 149 ],
+            "I2": [ 275 ],
+            "I3": [ 292 ],
+            "O": [ 296 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_1_SB_LUT4_I3_O_SB_LUT4_I2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111110000110000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 243 ],
+            "I2": [ 296 ],
+            "I3": [ 297 ],
+            "O": [ 164 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_1_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111001111000000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 149 ],
+            "I2": [ 250 ],
+            "I3": [ 258 ],
+            "O": [ 297 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_2_SB_LUT4_I2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000001111001111"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 241 ],
+            "I2": [ 291 ],
+            "I3": [ 274 ],
+            "O": [ 298 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_2_SB_LUT4_I2_O_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000001000010011"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 149 ],
+            "I1": [ 243 ],
+            "I2": [ 294 ],
+            "I3": [ 298 ],
+            "O": [ 299 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_2_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1010101010101000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 300 ],
+            "I1": [ 299 ],
+            "I2": [ 301 ],
+            "I3": [ 162 ],
+            "O": [ 158 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_2_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000001000100010"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 138 ],
+            "I1": [ 137 ],
+            "I2": [ 162 ],
+            "I3": [ 302 ],
+            "O": [ 300 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_2_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1_I0_SB_LUT4_O_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000110000111111"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 149 ],
+            "I2": [ 232 ],
+            "I3": [ 238 ],
+            "O": [ 302 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_2_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1010001010000000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 243 ],
+            "I1": [ 149 ],
+            "I2": [ 249 ],
+            "I3": [ 257 ],
+            "O": [ 301 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_3_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000101010011011"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 241 ],
+            "I1": [ 242 ],
+            "I2": [ 273 ],
+            "I3": [ 290 ],
+            "O": [ 303 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_3_SB_LUT4_I3_O_SB_LUT4_I1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000001010010111"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 242 ],
+            "I1": [ 303 ],
+            "I2": [ 304 ],
+            "I3": [ 305 ],
+            "O": [ 161 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_3_SB_LUT4_I3_O_SB_LUT4_I1_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111001111000000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 303 ],
+            "I2": [ 306 ],
+            "I3": [ 307 ],
+            "O": [ 304 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_3_SB_LUT4_I3_O_SB_LUT4_I1_1_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1101100101010001"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 149 ],
+            "I1": [ 242 ],
+            "I2": [ 237 ],
+            "I3": [ 231 ],
+            "O": [ 306 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_3_SB_LUT4_I3_O_SB_LUT4_I1_1_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000110000111111"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 149 ],
+            "I2": [ 248 ],
+            "I3": [ 256 ],
+            "O": [ 307 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_3_SB_LUT4_I3_O_SB_LUT4_I1_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000100000101010"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 149 ],
+            "I1": [ 260 ],
+            "I2": [ 265 ],
+            "I3": [ 282 ],
+            "O": [ 305 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_4_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110011010100010"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 149 ],
+            "I1": [ 137 ],
+            "I2": [ 281 ],
+            "I3": [ 289 ],
+            "O": [ 308 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_5_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000001000010011"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 260 ],
+            "I1": [ 149 ],
+            "I2": [ 271 ],
+            "I3": [ 288 ],
+            "O": [ 309 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_5_SB_LUT4_I3_O_SB_LUT4_I2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0101010101010100"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 310 ],
+            "I1": [ 311 ],
+            "I2": [ 309 ],
+            "I3": [ 243 ],
+            "O": [ 163 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_5_SB_LUT4_I3_O_SB_LUT4_I2_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1010001010000000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 243 ],
+            "I1": [ 149 ],
+            "I2": [ 246 ],
+            "I3": [ 254 ],
+            "O": [ 310 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_5_SB_LUT4_I3_O_SB_LUT4_I2_I1_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000100000101010"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 149 ],
+            "I1": [ 260 ],
+            "I2": [ 263 ],
+            "I3": [ 280 ],
+            "O": [ 311 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_6_SB_LUT4_I2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000001111001111"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 241 ],
+            "I2": [ 287 ],
+            "I3": [ 270 ],
+            "O": [ 312 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_6_SB_LUT4_I2_O_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110000011110001"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 242 ],
+            "I1": [ 149 ],
+            "I2": [ 313 ],
+            "I3": [ 312 ],
+            "O": [ 314 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_6_SB_LUT4_I2_O_SB_LUT4_I3_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0111011001010100"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 241 ],
+            "I1": [ 242 ],
+            "I2": [ 279 ],
+            "I3": [ 262 ],
+            "O": [ 313 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_6_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1001111100011111"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 242 ],
+            "I1": [ 314 ],
+            "I2": [ 315 ],
+            "I3": [ 316 ],
+            "O": [ 156 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_6_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000100010001000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 137 ],
+            "I1": [ 138 ],
+            "I2": [ 162 ],
+            "I3": [ 317 ],
+            "O": [ 315 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_6_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000110000111111"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 149 ],
+            "I2": [ 229 ],
+            "I3": [ 235 ],
+            "O": [ 317 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_6_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000110000111111"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 149 ],
+            "I2": [ 245 ],
+            "I3": [ 253 ],
+            "O": [ 316 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111111011011100"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 318 ],
+            "I1": [ 149 ],
+            "I2": [ 286 ],
+            "I3": [ 269 ],
+            "O": [ 319 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2_I0_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000100000001000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 137 ],
+            "I1": [ 138 ],
+            "I2": [ 242 ],
+            "I3": [ 318 ],
+            "O": [ 320 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0010101001101110"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 241 ],
+            "I1": [ 242 ],
+            "I2": [ 321 ],
+            "I3": [ 322 ],
+            "O": [ 318 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2_I0_SB_LUT4_O_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000110000111111"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 149 ],
+            "I2": [ 228 ],
+            "I3": [ 234 ],
+            "O": [ 321 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2_I0_SB_LUT4_O_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000110000111111"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 149 ],
+            "I2": [ 244 ],
+            "I3": [ 252 ],
+            "O": [ 322 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2_O_SB_LUT4_I2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000100010101000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 320 ],
+            "I1": [ 242 ],
+            "I2": [ 319 ],
+            "I3": [ 323 ],
+            "O": [ 159 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2_O_SB_LUT4_I2_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000100000101010"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 149 ],
+            "I1": [ 260 ],
+            "I2": [ 261 ],
+            "I3": [ 278 ],
+            "O": [ 323 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_9_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110011010100010"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 241 ],
+            "I1": [ 149 ],
+            "I2": [ 267 ],
+            "I3": [ 284 ],
+            "O": [ 295 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1011100110101000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 308 ],
+            "I1": [ 137 ],
+            "I2": [ 285 ],
+            "I3": [ 293 ],
+            "O": [ 324 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111110000110000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:51"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 241 ],
+            "I2": [ 324 ],
+            "I3": [ 325 ],
+            "O": [ 326 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1011100110101000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 327 ],
+            "I1": [ 149 ],
+            "I2": [ 272 ],
+            "I3": [ 276 ],
+            "O": [ 325 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_LUT4_O_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110011010100010"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 137 ],
+            "I1": [ 149 ],
+            "I2": [ 264 ],
+            "I3": [ 268 ],
+            "O": [ 327 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110110011111101"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 242 ],
+            "I1": [ 138 ],
+            "I2": [ 328 ],
+            "I3": [ 326 ],
+            "O": [ 157 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0100010001001110"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 241 ],
+            "I1": [ 329 ],
+            "I2": [ 330 ],
+            "I3": [ 331 ],
+            "O": [ 328 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_I2_SB_LUT4_O_I1_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000101010011011"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 332 ],
+            "I1": [ 137 ],
+            "I2": [ 251 ],
+            "I3": [ 259 ],
+            "O": [ 329 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_I2_SB_LUT4_O_I1_SB_LUT4_O_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0010101001101110"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 149 ],
+            "I1": [ 137 ],
+            "I2": [ 247 ],
+            "I3": [ 255 ],
             "O": [ 332 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1010001010000000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 137 ],
+            "I1": [ 149 ],
+            "I2": [ 230 ],
+            "I3": [ 236 ],
+            "O": [ 330 ]
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0011000100100000"
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/norman/anaconda3/bin/../share/yosys/ice40/cells_map.v:56"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 149 ],
+            "I1": [ 137 ],
+            "I2": [ 233 ],
+            "I3": [ 239 ],
+            "O": [ 331 ]
           }
         },
         "SRAM.wen_SB_LUT4_O": {
@@ -11059,8 +11059,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ 333 ],
-            "I3": [ 264 ],
-            "O": [ 321 ]
+            "I3": [ 171 ],
+            "O": [ 240 ]
           }
         },
         "adc_host_hi.CONVST_SB_DFFESR_Q": {
@@ -11137,7 +11137,7 @@
             "O": [ 338 ]
           }
         },
-        "adc_host_hi.CONVST_SB_DFFESR_Q_E_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O": {
+        "adc_host_hi.CONVST_SB_DFFESR_Q_E_SB_LUT4_O_I3_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11159,7 +11159,7 @@
             "I1": [ 345 ],
             "I2": [ 346 ],
             "I3": [ 347 ],
-            "O": [ 341 ]
+            "O": [ 339 ]
           }
         },
         "adc_host_hi.CONVST_SB_DFFESR_Q_R_SB_LUT4_O": {
@@ -11279,8 +11279,8 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ 351 ],
-            "I2": [ 342 ],
-            "I3": [ 343 ],
+            "I2": [ 346 ],
+            "I3": [ 347 ],
             "O": [ 350 ]
           }
         },
@@ -11303,9 +11303,9 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 342 ],
+            "I1": [ 346 ],
             "I2": [ 351 ],
-            "I3": [ 343 ],
+            "I3": [ 347 ],
             "O": [ 334 ]
           }
         },
@@ -11352,10 +11352,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 339 ],
-            "I1": [ 347 ],
-            "I2": [ 346 ],
-            "I3": [ 340 ],
+            "I0": [ 340 ],
+            "I1": [ 343 ],
+            "I2": [ 342 ],
+            "I3": [ 341 ],
             "O": [ 352 ]
           }
         },
@@ -11446,7 +11446,7 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 356 ],
-            "Q": [ 342 ],
+            "Q": [ 346 ],
             "R": [ 334 ]
           }
         },
@@ -11470,7 +11470,7 @@
           "connections": {
             "I0": [ 337 ],
             "I1": [ "0" ],
-            "I2": [ 342 ],
+            "I2": [ 346 ],
             "I3": [ 357 ],
             "O": [ 356 ]
           }
@@ -11493,7 +11493,7 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 358 ],
-            "Q": [ 343 ],
+            "Q": [ 347 ],
             "R": [ 334 ]
           }
         },
@@ -11517,7 +11517,7 @@
           "connections": {
             "I0": [ 337 ],
             "I1": [ "0" ],
-            "I2": [ 343 ],
+            "I2": [ 347 ],
             "I3": [ 359 ],
             "O": [ 358 ]
           }
@@ -11540,7 +11540,7 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 360 ],
-            "Q": [ 340 ],
+            "Q": [ 341 ],
             "R": [ 334 ]
           }
         },
@@ -11564,7 +11564,7 @@
           "connections": {
             "I0": [ 337 ],
             "I1": [ "0" ],
-            "I2": [ 340 ],
+            "I2": [ 341 ],
             "I3": [ 361 ],
             "O": [ 360 ]
           }
@@ -11587,7 +11587,7 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 362 ],
-            "Q": [ 346 ],
+            "Q": [ 342 ],
             "R": [ 334 ]
           }
         },
@@ -11611,7 +11611,7 @@
           "connections": {
             "I0": [ 337 ],
             "I1": [ "0" ],
-            "I2": [ 346 ],
+            "I2": [ 342 ],
             "I3": [ 363 ],
             "O": [ 362 ]
           }
@@ -11634,7 +11634,7 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 364 ],
-            "Q": [ 339 ],
+            "Q": [ 340 ],
             "R": [ 334 ]
           }
         },
@@ -11658,8 +11658,8 @@
           "connections": {
             "I0": [ 337 ],
             "I1": [ "0" ],
-            "I2": [ 339 ],
-            "I3": [ 347 ],
+            "I2": [ 340 ],
+            "I3": [ 343 ],
             "O": [ 364 ]
           }
         },
@@ -11681,7 +11681,7 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 365 ],
-            "Q": [ 347 ],
+            "Q": [ 343 ],
             "R": [ 334 ]
           }
         },
@@ -11706,7 +11706,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ 337 ],
-            "I3": [ 347 ],
+            "I3": [ 343 ],
             "O": [ 365 ]
           }
         },
@@ -11774,7 +11774,7 @@
             "CI": [ 357 ],
             "CO": [ 355 ],
             "I0": [ "0" ],
-            "I1": [ 342 ]
+            "I1": [ 346 ]
           }
         },
         "adc_host_hi.count_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_2": {
@@ -11795,7 +11795,7 @@
             "CI": [ 359 ],
             "CO": [ 357 ],
             "I0": [ "0" ],
-            "I1": [ 343 ]
+            "I1": [ 347 ]
           }
         },
         "adc_host_hi.count_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_3": {
@@ -11816,7 +11816,7 @@
             "CI": [ 361 ],
             "CO": [ 359 ],
             "I0": [ "0" ],
-            "I1": [ 340 ]
+            "I1": [ 341 ]
           }
         },
         "adc_host_hi.count_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_4": {
@@ -11837,7 +11837,7 @@
             "CI": [ 363 ],
             "CO": [ 361 ],
             "I0": [ "0" ],
-            "I1": [ 346 ]
+            "I1": [ 342 ]
           }
         },
         "adc_host_hi.count_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_5": {
@@ -11855,10 +11855,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 347 ],
+            "CI": [ 343 ],
             "CO": [ 363 ],
             "I0": [ "0" ],
-            "I1": [ 339 ]
+            "I1": [ 340 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q": {
@@ -11880,7 +11880,7 @@
             "C": [ 2 ],
             "D": [ 367 ],
             "E": [ 334 ],
-            "Q": [ 320 ]
+            "Q": [ 227 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_1": {
@@ -11902,7 +11902,7 @@
             "C": [ 2 ],
             "D": [ 368 ],
             "E": [ 334 ],
-            "Q": [ 319 ]
+            "Q": [ 226 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_10": {
@@ -11924,7 +11924,7 @@
             "C": [ 2 ],
             "D": [ 369 ],
             "E": [ 334 ],
-            "Q": [ 310 ]
+            "Q": [ 217 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_11": {
@@ -11946,7 +11946,7 @@
             "C": [ 2 ],
             "D": [ 370 ],
             "E": [ 334 ],
-            "Q": [ 309 ]
+            "Q": [ 216 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_12": {
@@ -11968,7 +11968,7 @@
             "C": [ 2 ],
             "D": [ 371 ],
             "E": [ 334 ],
-            "Q": [ 308 ]
+            "Q": [ 215 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_13": {
@@ -11990,7 +11990,7 @@
             "C": [ 2 ],
             "D": [ 372 ],
             "E": [ 334 ],
-            "Q": [ 307 ]
+            "Q": [ 214 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_14": {
@@ -12012,7 +12012,7 @@
             "C": [ 2 ],
             "D": [ 373 ],
             "E": [ 334 ],
-            "Q": [ 306 ]
+            "Q": [ 213 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_15": {
@@ -12034,7 +12034,7 @@
             "C": [ 2 ],
             "D": [ 374 ],
             "E": [ 334 ],
-            "Q": [ 305 ]
+            "Q": [ 212 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_2": {
@@ -12056,7 +12056,7 @@
             "C": [ 2 ],
             "D": [ 375 ],
             "E": [ 334 ],
-            "Q": [ 318 ]
+            "Q": [ 225 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_3": {
@@ -12078,7 +12078,7 @@
             "C": [ 2 ],
             "D": [ 376 ],
             "E": [ 334 ],
-            "Q": [ 317 ]
+            "Q": [ 224 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_4": {
@@ -12100,7 +12100,7 @@
             "C": [ 2 ],
             "D": [ 377 ],
             "E": [ 334 ],
-            "Q": [ 316 ]
+            "Q": [ 223 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_5": {
@@ -12122,7 +12122,7 @@
             "C": [ 2 ],
             "D": [ 378 ],
             "E": [ 334 ],
-            "Q": [ 315 ]
+            "Q": [ 222 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_6": {
@@ -12144,7 +12144,7 @@
             "C": [ 2 ],
             "D": [ 379 ],
             "E": [ 334 ],
-            "Q": [ 314 ]
+            "Q": [ 221 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_7": {
@@ -12166,7 +12166,7 @@
             "C": [ 2 ],
             "D": [ 380 ],
             "E": [ 334 ],
-            "Q": [ 313 ]
+            "Q": [ 220 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_8": {
@@ -12188,7 +12188,7 @@
             "C": [ 2 ],
             "D": [ 381 ],
             "E": [ 334 ],
-            "Q": [ 312 ]
+            "Q": [ 219 ]
           }
         },
         "adc_host_hi.data_SB_DFFE_Q_9": {
@@ -12210,7 +12210,7 @@
             "C": [ 2 ],
             "D": [ 382 ],
             "E": [ 334 ],
-            "Q": [ 311 ]
+            "Q": [ 218 ]
           }
         },
         "adc_host_hi.newdata_SB_DFF_Q": {
@@ -12255,7 +12255,7 @@
             "I1": [ "0" ],
             "I2": [ 384 ],
             "I3": [ 383 ],
-            "O": [ 292 ]
+            "O": [ 199 ]
           }
         },
         "adc_host_hi.newdata_SB_LUT4_I3_1": {
@@ -12668,7 +12668,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ 387 ],
-            "I3": [ 264 ],
+            "I3": [ 171 ],
             "O": [ 388 ]
           }
         },
@@ -12751,7 +12751,7 @@
           },
           "connections": {
             "CI": [ 397 ],
-            "CO": [ 302 ],
+            "CO": [ 209 ],
             "I0": [ "0" ],
             "I1": [ 398 ]
           }
@@ -12855,10 +12855,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 294 ],
+            "CI": [ 201 ],
             "CO": [ 404 ],
             "I0": [ "0" ],
-            "I1": [ 293 ]
+            "I1": [ 200 ]
           }
         },
         "addr_adc_SB_CARRY_I1_5": {
@@ -12876,10 +12876,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 299 ],
-            "CO": [ 294 ],
+            "CI": [ 206 ],
+            "CO": [ 201 ],
             "I0": [ "0" ],
-            "I1": [ 298 ]
+            "I1": [ 205 ]
           }
         },
         "addr_adc_SB_CARRY_I1_6": {
@@ -12898,7 +12898,7 @@
           },
           "connections": {
             "CI": [ 406 ],
-            "CO": [ 299 ],
+            "CO": [ 206 ],
             "I0": [ "0" ],
             "I1": [ 407 ]
           }
@@ -12960,10 +12960,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 302 ],
+            "CI": [ 209 ],
             "CO": [ 409 ],
             "I0": [ "0" ],
-            "I1": [ 301 ]
+            "I1": [ 208 ]
           }
         },
         "addr_adc_SB_LUT4_O": {
@@ -12987,7 +12987,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 275 ],
+            "I3": [ 182 ],
             "O": [ 389 ]
           }
         },
@@ -13012,7 +13012,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 303 ],
+            "I3": [ 210 ],
             "O": [ 411 ]
           }
         },
@@ -13037,8 +13037,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 289 ],
-            "O": [ 293 ]
+            "I3": [ 196 ],
+            "O": [ 200 ]
           }
         },
         "addr_adc_SB_LUT4_O_11": {
@@ -13062,8 +13062,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 295 ],
-            "O": [ 298 ]
+            "I3": [ 202 ],
+            "O": [ 205 ]
           }
         },
         "addr_adc_SB_LUT4_O_12": {
@@ -13087,7 +13087,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 269 ],
+            "I3": [ 176 ],
             "O": [ 407 ]
           }
         },
@@ -13109,8 +13109,8 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 412 ],
-            "E": [ 292 ],
-            "Q": [ 269 ]
+            "E": [ 199 ],
+            "Q": [ 176 ]
           }
         },
         "addr_adc_SB_LUT4_O_12_I3_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -13159,7 +13159,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 271 ],
+            "I3": [ 178 ],
             "O": [ 408 ]
           }
         },
@@ -13181,8 +13181,8 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 413 ],
-            "E": [ 292 ],
-            "Q": [ 271 ]
+            "E": [ 199 ],
+            "Q": [ 178 ]
           }
         },
         "addr_adc_SB_LUT4_O_13_I3_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -13230,8 +13230,8 @@
           "connections": {
             "I0": [ 414 ],
             "I1": [ 415 ],
-            "I2": [ 271 ],
-            "I3": [ 273 ],
+            "I2": [ 178 ],
+            "I3": [ 180 ],
             "O": [ 387 ]
           }
         },
@@ -13256,7 +13256,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 273 ],
+            "I3": [ 180 ],
             "O": [ 391 ]
           }
         },
@@ -13278,8 +13278,8 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 416 ],
-            "E": [ 292 ],
-            "Q": [ 273 ]
+            "E": [ 199 ],
+            "Q": [ 180 ]
           }
         },
         "addr_adc_SB_LUT4_O_14_I3_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -13325,8 +13325,8 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 417 ],
-            "E": [ 292 ],
-            "Q": [ 303 ]
+            "E": [ 199 ],
+            "Q": [ 210 ]
           }
         },
         "addr_adc_SB_LUT4_O_1_I3_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -13375,8 +13375,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 265 ],
-            "O": [ 301 ]
+            "I3": [ 172 ],
+            "O": [ 208 ]
           }
         },
         "addr_adc_SB_LUT4_O_3": {
@@ -13400,7 +13400,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 267 ],
+            "I3": [ 174 ],
             "O": [ 398 ]
           }
         },
@@ -13422,8 +13422,8 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 418 ],
-            "E": [ 292 ],
-            "Q": [ 267 ]
+            "E": [ 199 ],
+            "Q": [ 174 ]
           }
         },
         "addr_adc_SB_LUT4_O_3_I3_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -13472,7 +13472,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 277 ],
+            "I3": [ 184 ],
             "O": [ 400 ]
           }
         },
@@ -13494,8 +13494,8 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 419 ],
-            "E": [ 292 ],
-            "Q": [ 277 ]
+            "E": [ 199 ],
+            "Q": [ 184 ]
           }
         },
         "addr_adc_SB_LUT4_O_4_I3_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -13544,7 +13544,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 279 ],
+            "I3": [ 186 ],
             "O": [ 401 ]
           }
         },
@@ -13566,8 +13566,8 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 420 ],
-            "E": [ 292 ],
-            "Q": [ 279 ]
+            "E": [ 199 ],
+            "Q": [ 186 ]
           }
         },
         "addr_adc_SB_LUT4_O_5_I3_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -13613,10 +13613,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 279 ],
-            "I1": [ 281 ],
-            "I2": [ 283 ],
-            "I3": [ 285 ],
+            "I0": [ 186 ],
+            "I1": [ 188 ],
+            "I2": [ 190 ],
+            "I3": [ 192 ],
             "O": [ 421 ]
           }
         },
@@ -13641,7 +13641,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 281 ],
+            "I3": [ 188 ],
             "O": [ 394 ]
           }
         },
@@ -13663,8 +13663,8 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 422 ],
-            "E": [ 292 ],
-            "Q": [ 281 ]
+            "E": [ 199 ],
+            "Q": [ 188 ]
           }
         },
         "addr_adc_SB_LUT4_O_6_I3_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -13713,7 +13713,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 283 ],
+            "I3": [ 190 ],
             "O": [ 396 ]
           }
         },
@@ -13735,8 +13735,8 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 423 ],
-            "E": [ 292 ],
-            "Q": [ 283 ]
+            "E": [ 199 ],
+            "Q": [ 190 ]
           }
         },
         "addr_adc_SB_LUT4_O_7_I3_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -13785,7 +13785,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 285 ],
+            "I3": [ 192 ],
             "O": [ 403 ]
           }
         },
@@ -13807,8 +13807,8 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 424 ],
-            "E": [ 292 ],
-            "Q": [ 285 ]
+            "E": [ 199 ],
+            "Q": [ 192 ]
           }
         },
         "addr_adc_SB_LUT4_O_8_I3_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -13857,7 +13857,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 287 ],
+            "I3": [ 194 ],
             "O": [ 405 ]
           }
         },
@@ -13879,8 +13879,8 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 425 ],
-            "E": [ 292 ],
-            "Q": [ 287 ]
+            "E": [ 199 ],
+            "Q": [ 194 ]
           }
         },
         "addr_adc_SB_LUT4_O_9_I3_SB_DFFE_Q_D_SB_LUT4_O": {
@@ -13926,10 +13926,10 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 287 ],
-            "I1": [ 289 ],
-            "I2": [ 295 ],
-            "I3": [ 269 ],
+            "I0": [ 194 ],
+            "I1": [ 196 ],
+            "I2": [ 202 ],
+            "I3": [ 176 ],
             "O": [ 414 ]
           }
         },
@@ -13951,8 +13951,8 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 389 ],
-            "E": [ 292 ],
-            "Q": [ 275 ]
+            "E": [ 199 ],
+            "Q": [ 182 ]
           }
         },
         "addr_adc_SB_LUT4_O_I3_SB_LUT4_I3": {
@@ -13976,7 +13976,7 @@
             "I0": [ "0" ],
             "I1": [ 426 ],
             "I2": [ 427 ],
-            "I3": [ 275 ],
+            "I3": [ 182 ],
             "O": [ 428 ]
           }
         },
@@ -14023,7 +14023,7 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ 387 ],
-            "I3": [ 292 ],
+            "I3": [ 199 ],
             "O": [ 429 ]
           }
         },
@@ -14047,7 +14047,7 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ 421 ],
-            "I2": [ 304 ],
+            "I2": [ 211 ],
             "I3": [ 428 ],
             "O": [ 415 ]
           }
@@ -15087,8 +15087,8 @@
             "I0": [ 11 ],
             "I1": [ 12 ],
             "I2": [ 110 ],
-            "I3": [ 303 ],
-            "O": [ 177 ]
+            "I3": [ 210 ],
+            "O": [ 241 ]
           }
         },
         "ramfull_SB_LUT4_I1_1": {
@@ -15113,7 +15113,7 @@
             "I1": [ 12 ],
             "I2": [ 114 ],
             "I3": [ 427 ],
-            "O": [ 180 ]
+            "O": [ 242 ]
           }
         },
         "ramfull_SB_LUT4_I1_1_I3_SB_DFFE_Q": {
@@ -15134,7 +15134,7 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 432 ],
-            "E": [ 292 ],
+            "E": [ 199 ],
             "Q": [ 427 ]
           }
         },
@@ -15185,7 +15185,7 @@
             "I1": [ "0" ],
             "I2": [ 11 ],
             "I3": [ 12 ],
-            "O": [ 264 ]
+            "O": [ 171 ]
           }
         },
         "wen_adc_SB_DFF_Q": {
@@ -15204,7 +15204,7 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 292 ],
+            "D": [ 199 ],
             "Q": [ 333 ]
           }
         }
@@ -15372,9 +15372,15 @@
           "attributes": {
           }
         },
-        "SPI_not_really.dcount_SB_LUT4_O_I3": {
+        "SPI_not_really.dcount_SB_LUT4_O_1_I3": {
           "hide_name": 0,
-          "bits": [ 137 ],
+          "bits": [ 138 ],
+          "attributes": {
+          }
+        },
+        "SPI_not_really.dcount_SB_LUT4_O_2_I3": {
+          "hide_name": 0,
+          "bits": [ 139 ],
           "attributes": {
           }
         },
@@ -15431,13 +15437,7 @@
         },
         "SPI_not_really.last_last_sclk_SB_LUT4_I3_O_SB_DFFE_E_1_Q": {
           "hide_name": 0,
-          "bits": [ 138 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.last_last_sclk_SB_LUT4_I3_O_SB_DFFE_E_2_Q": {
-          "hide_name": 0,
-          "bits": [ 139 ],
+          "bits": [ 137 ],
           "attributes": {
           }
         },
@@ -15498,157 +15498,15 @@
           "attributes": {
           }
         },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I0_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 161 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 163 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 164 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I0_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 162 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 169 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 170 ],
-          "attributes": {
-          }
-        },
         "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1": {
           "hide_name": 0,
           "bits": [ 157 ],
           "attributes": {
           }
         },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 175 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I1": {
-          "hide_name": 0,
-          "bits": [ 178 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I0": {
-          "hide_name": 0,
-          "bits": [ 181 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 179 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I0": {
-          "hide_name": 0,
-          "bits": [ 186 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 176 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 192 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 193 ],
-          "attributes": {
-          }
-        },
         "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2": {
           "hide_name": 0,
           "bits": [ 158 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 198 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 200 ],
-          "attributes": {
-            "src": "top_sampling.v:117|../sram16x16.v:21"
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 201 ],
-          "attributes": {
-            "src": "top_sampling.v:117|../sram16x16.v:21"
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 199 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 206 ],
-          "attributes": {
-            "src": "top_sampling.v:117|../sram16x16.v:21"
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 207 ],
-          "attributes": {
-            "src": "top_sampling.v:117|../sram16x16.v:21"
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 159 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 212 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I0": {
-          "hide_name": 0,
-          "bits": [ 213 ],
           "attributes": {
           }
         },
@@ -15660,67 +15518,13 @@
         },
         "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I1_SB_LUT4_O_I2": {
           "hide_name": 0,
-          "bits": [ 218 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I1": {
-          "hide_name": 0,
-          "bits": [ 219 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I1_SB_LUT4_O_I0": {
-          "hide_name": 0,
-          "bits": [ 222 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 220 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 221 ],
+          "bits": [ 160 ],
           "attributes": {
           }
         },
         "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I2": {
           "hide_name": 0,
           "bits": [ 154 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 231 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I0": {
-          "hide_name": 0,
-          "bits": [ 233 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_I1": {
-          "hide_name": 0,
-          "bits": [ 236 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I1": {
-          "hide_name": 0,
-          "bits": [ 234 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 232 ],
           "attributes": {
           }
         },
@@ -15732,63 +15536,13 @@
         },
         "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2": {
           "hide_name": 0,
-          "bits": [ 242 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 244 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 246 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 247 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 245 ],
+          "bits": [ 165 ],
           "attributes": {
           }
         },
         "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ 243 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 254 ],
-          "attributes": {
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 256 ],
-          "attributes": {
-            "src": "top_sampling.v:117|../sram16x16.v:21"
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 257 ],
-          "attributes": {
-            "src": "top_sampling.v:117|../sram16x16.v:21"
-          }
-        },
-        "SPI_not_really.miso_SB_DFFE_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 255 ],
+          "bits": [ 166 ],
           "attributes": {
           }
         },
@@ -15801,7 +15555,7 @@
         },
         "SRAM.addr": {
           "hide_name": 0,
-          "bits": [ 276, 274, 272, 270, 296, 290, 288, 286, 284, 282, 280, 278, 268, 266, 466, 467 ],
+          "bits": [ 183, 181, 179, 177, 203, 197, 195, 193, 191, 189, 187, 185, 175, 173, 466, 467 ],
           "attributes": {
             "src": "top_sampling.v:117|../sram16x16.v:11",
             "unused_bits": "14 15"
@@ -15809,43 +15563,43 @@
         },
         "SRAM.addr_SB_LUT4_O_8_I2": {
           "hide_name": 0,
-          "bits": [ 289 ],
+          "bits": [ 196 ],
           "attributes": {
           }
         },
         "SRAM.addr_SB_LUT4_O_8_I2_SB_DFFE_Q_D": {
           "hide_name": 0,
-          "bits": [ 291 ],
+          "bits": [ 198 ],
           "attributes": {
           }
         },
         "SRAM.addr_SB_LUT4_O_9_I2": {
           "hide_name": 0,
-          "bits": [ 295 ],
+          "bits": [ 202 ],
           "attributes": {
           }
         },
         "SRAM.addr_SB_LUT4_O_9_I2_SB_DFFE_Q_D": {
           "hide_name": 0,
-          "bits": [ 297 ],
+          "bits": [ 204 ],
           "attributes": {
           }
         },
         "SRAM.addr_SB_LUT4_O_I2": {
           "hide_name": 0,
-          "bits": [ 265 ],
+          "bits": [ 172 ],
           "attributes": {
           }
         },
         "SRAM.addr_SB_LUT4_O_I2_SB_DFFE_Q_D": {
           "hide_name": 0,
-          "bits": [ 300 ],
+          "bits": [ 207 ],
           "attributes": {
           }
         },
         "SRAM.addr_SB_LUT4_O_I2_SB_LUT4_I1_O": {
           "hide_name": 0,
-          "bits": [ 304 ],
+          "bits": [ 211 ],
           "attributes": {
           }
         },
@@ -15858,88 +15612,405 @@
         },
         "SRAM.ram00_CHIPSELECT": {
           "hide_name": 0,
-          "bits": [ 160 ],
+          "bits": [ 162 ],
           "attributes": {
             "src": "top_sampling.v:117|../sram16x16.v:19"
           }
         },
         "SRAM.ram01_CHIPSELECT": {
           "hide_name": 0,
-          "bits": [ 191 ],
+          "bits": [ 243 ],
           "attributes": {
             "src": "top_sampling.v:117|../sram16x16.v:20"
           }
         },
         "SRAM.ram10_CHIPSELECT": {
           "hide_name": 0,
-          "bits": [ 324 ],
+          "bits": [ 260 ],
           "attributes": {
             "src": "top_sampling.v:117|../sram16x16.v:21"
           }
         },
-        "SRAM.ram10_CHIPSELECT_SB_LUT4_I0_O": {
+        "SRAM.ram11_CHIPSELECT": {
+          "hide_name": 0,
+          "bits": [ 277 ],
+          "attributes": {
+            "src": "top_sampling.v:117|../sram16x16.v:68"
+          }
+        },
+        "SRAM.ram11_DATAOUT": {
+          "hide_name": 0,
+          "bits": [ 293 ],
+          "attributes": {
+            "src": "top_sampling.v:117|../sram16x16.v:17"
+          }
+        },
+        "SRAM.ram11_DATAOUT_1": {
+          "hide_name": 0,
+          "bits": [ 292 ],
+          "attributes": {
+            "src": "top_sampling.v:117|../sram16x16.v:17"
+          }
+        },
+        "SRAM.ram11_DATAOUT_10": {
+          "hide_name": 0,
+          "bits": [ 283 ],
+          "attributes": {
+            "src": "top_sampling.v:117|../sram16x16.v:17"
+          }
+        },
+        "SRAM.ram11_DATAOUT_10_SB_LUT4_I2_O": {
+          "hide_name": 0,
+          "bits": [ 294 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_1_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 296 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_1_SB_LUT4_I3_O_SB_LUT4_I2_I3": {
+          "hide_name": 0,
+          "bits": [ 297 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_1_SB_LUT4_I3_O_SB_LUT4_I2_O": {
+          "hide_name": 0,
+          "bits": [ 164 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_2": {
+          "hide_name": 0,
+          "bits": [ 291 ],
+          "attributes": {
+            "src": "top_sampling.v:117|../sram16x16.v:17"
+          }
+        },
+        "SRAM.ram11_DATAOUT_2_SB_LUT4_I2_O": {
+          "hide_name": 0,
+          "bits": [ 298 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_2_SB_LUT4_I2_O_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 299 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_2_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1_I0": {
+          "hide_name": 0,
+          "bits": [ 300 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_2_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1_I0_SB_LUT4_O_I3": {
+          "hide_name": 0,
+          "bits": [ 302 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_2_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1_I2": {
+          "hide_name": 0,
+          "bits": [ 301 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_3": {
+          "hide_name": 0,
+          "bits": [ 290 ],
+          "attributes": {
+            "src": "top_sampling.v:117|../sram16x16.v:17"
+          }
+        },
+        "SRAM.ram11_DATAOUT_3_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 303 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_3_SB_LUT4_I3_O_SB_LUT4_I1_1_I2": {
+          "hide_name": 0,
+          "bits": [ 306 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_3_SB_LUT4_I3_O_SB_LUT4_I1_1_I3": {
+          "hide_name": 0,
+          "bits": [ 307 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_3_SB_LUT4_I3_O_SB_LUT4_I1_1_O": {
+          "hide_name": 0,
+          "bits": [ 304 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_3_SB_LUT4_I3_O_SB_LUT4_I1_I3": {
+          "hide_name": 0,
+          "bits": [ 305 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_3_SB_LUT4_I3_O_SB_LUT4_I1_O": {
+          "hide_name": 0,
+          "bits": [ 161 ],
+          "attributes": {
+            "src": "top_sampling.v:107|../serial_out.v:24|/home/norman/anaconda3/bin/../share/yosys/techmap.v:145"
+          }
+        },
+        "SRAM.ram11_DATAOUT_4": {
+          "hide_name": 0,
+          "bits": [ 289 ],
+          "attributes": {
+            "src": "top_sampling.v:117|../sram16x16.v:17"
+          }
+        },
+        "SRAM.ram11_DATAOUT_4_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 308 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_5": {
+          "hide_name": 0,
+          "bits": [ 288 ],
+          "attributes": {
+            "src": "top_sampling.v:117|../sram16x16.v:17"
+          }
+        },
+        "SRAM.ram11_DATAOUT_5_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 309 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_5_SB_LUT4_I3_O_SB_LUT4_I2_I0": {
+          "hide_name": 0,
+          "bits": [ 310 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_5_SB_LUT4_I3_O_SB_LUT4_I2_I1": {
+          "hide_name": 0,
+          "bits": [ 311 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_5_SB_LUT4_I3_O_SB_LUT4_I2_O": {
+          "hide_name": 0,
+          "bits": [ 163 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_6": {
+          "hide_name": 0,
+          "bits": [ 287 ],
+          "attributes": {
+            "src": "top_sampling.v:117|../sram16x16.v:17"
+          }
+        },
+        "SRAM.ram11_DATAOUT_6_SB_LUT4_I2_O": {
+          "hide_name": 0,
+          "bits": [ 312 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_6_SB_LUT4_I2_O_SB_LUT4_I3_I2": {
+          "hide_name": 0,
+          "bits": [ 313 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_6_SB_LUT4_I2_O_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 314 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_6_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1_I2": {
+          "hide_name": 0,
+          "bits": [ 315 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_6_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1_I2_SB_LUT4_O_I3": {
+          "hide_name": 0,
+          "bits": [ 317 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_6_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I1_I3": {
+          "hide_name": 0,
+          "bits": [ 316 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_7": {
+          "hide_name": 0,
+          "bits": [ 286 ],
+          "attributes": {
+            "src": "top_sampling.v:117|../sram16x16.v:17"
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2_I0": {
+          "hide_name": 0,
+          "bits": [ 318 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2_I0_SB_LUT4_O_I2": {
+          "hide_name": 0,
+          "bits": [ 321 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2_I0_SB_LUT4_O_I3": {
+          "hide_name": 0,
+          "bits": [ 322 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2_O": {
+          "hide_name": 0,
+          "bits": [ 319 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2_O_SB_LUT4_I2_I0": {
+          "hide_name": 0,
+          "bits": [ 320 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2_O_SB_LUT4_I2_I3": {
+          "hide_name": 0,
+          "bits": [ 323 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_7_SB_LUT4_I2_O_SB_LUT4_I2_O": {
+          "hide_name": 0,
+          "bits": [ 159 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_8": {
+          "hide_name": 0,
+          "bits": [ 285 ],
+          "attributes": {
+            "src": "top_sampling.v:117|../sram16x16.v:17"
+          }
+        },
+        "SRAM.ram11_DATAOUT_9": {
+          "hide_name": 0,
+          "bits": [ 284 ],
+          "attributes": {
+            "src": "top_sampling.v:117|../sram16x16.v:17"
+          }
+        },
+        "SRAM.ram11_DATAOUT_9_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 295 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 324 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_I3": {
+          "hide_name": 0,
+          "bits": [ 325 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_I3_SB_LUT4_O_I0": {
+          "hide_name": 0,
+          "bits": [ 327 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_O": {
+          "hide_name": 0,
+          "bits": [ 326 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_I2": {
           "hide_name": 0,
           "bits": [ 328 ],
           "attributes": {
           }
         },
-        "SRAM.ram10_CHIPSELECT_SB_LUT4_I1_O": {
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_I2_SB_LUT4_O_I1": {
+          "hide_name": 0,
+          "bits": [ 329 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_I2_SB_LUT4_O_I1_SB_LUT4_O_I0": {
+          "hide_name": 0,
+          "bits": [ 332 ],
+          "attributes": {
+          }
+        },
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_I2_SB_LUT4_O_I2": {
           "hide_name": 0,
           "bits": [ 330 ],
           "attributes": {
           }
         },
-        "SRAM.ram10_CHIPSELECT_SB_LUT4_I1_O_SB_LUT4_I2_I1": {
+        "SRAM.ram11_DATAOUT_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I3_I2_SB_LUT4_O_I3": {
           "hide_name": 0,
           "bits": [ 331 ],
           "attributes": {
           }
         },
-        "SRAM.ram11_CHIPSELECT": {
-          "hide_name": 0,
-          "bits": [ 332 ],
-          "attributes": {
-            "src": "top_sampling.v:117|../sram16x16.v:68"
-          }
-        },
         "SRAM.rdata_0": {
           "hide_name": 0,
-          "bits": [ 227, 171, 225, 165, 229, 173, 223, 167, 228, 172, 226, 166, 230, 174, 224, 168 ],
+          "bits": [ 228, 229, 169, 230, 231, 232, 167, 233, 234, 235, 170, 236, 237, 238, 168, 239 ],
           "attributes": {
             "src": "top_sampling.v:117|../sram16x16.v:17"
           }
         },
         "SRAM.rdata_1": {
           "hide_name": 0,
-          "bits": [ 262, 216, 252, 194, 237, 214, 322, 195, 263, 217, 253, 196, 235, 215, 323, 197 ],
+          "bits": [ 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259 ],
           "attributes": {
             "src": "top_sampling.v:117|../sram16x16.v:17"
           }
         },
         "SRAM.rdata_2": {
           "hide_name": 0,
-          "bits": [ 259, 203, 250, 184, 239, 211, 325, 182, 261, 205, 251, 185, 241, 209, 326, 183 ],
+          "bits": [ 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276 ],
           "attributes": {
             "src": "top_sampling.v:117|../sram16x16.v:17"
           }
         },
         "SRAM.rdata_3": {
           "hide_name": 0,
-          "bits": [ 258, 202, 248, 189, 238, 210, 329, 187, 260, 204, 249, 190, 240, 208, 327, 188 ],
+          "bits": [ 278, 279, 280, 281, 282 ],
           "attributes": {
-            "src": "top_sampling.v:117|../sram16x16.v:17"
           }
         },
         "SRAM.wdata": {
           "hide_name": 0,
-          "bits": [ 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320 ],
+          "bits": [ 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227 ],
           "attributes": {
             "src": "top_sampling.v:117|../sram16x16.v:12"
           }
         },
         "SRAM.wen": {
           "hide_name": 0,
-          "bits": [ 321 ],
+          "bits": [ 240 ],
           "attributes": {
             "src": "top_sampling.v:117|../sram16x16.v:10"
           }
@@ -15963,9 +16034,9 @@
           "attributes": {
           }
         },
-        "adc_host_hi.CONVST_SB_DFFESR_Q_E_SB_LUT4_O_I2_SB_LUT4_O_I1": {
+        "adc_host_hi.CONVST_SB_DFFESR_Q_E_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ 341 ],
+          "bits": [ 339 ],
           "attributes": {
           }
         },
@@ -16035,7 +16106,7 @@
         },
         "adc_host_hi.count": {
           "hide_name": 0,
-          "bits": [ 347, 339, 346, 340, 343, 342, 345, 344 ],
+          "bits": [ 343, 340, 342, 341, 347, 346, 345, 344 ],
           "attributes": {
             "src": "top_sampling.v:95|../adc_host.v:22"
           }
@@ -16090,14 +16161,14 @@
         },
         "adc_host_hi.count_SB_DFFSR_Q_D_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ "0", 347, 363, 361, 359, 357, 355, 366 ],
+          "bits": [ "0", 343, 363, 361, 359, 357, 355, 366 ],
           "attributes": {
             "src": "top_sampling.v:95|../adc_host.v:31|/home/norman/anaconda3/bin/../share/yosys/ice40/arith_map.v:43"
           }
         },
         "adc_host_hi.data": {
           "hide_name": 0,
-          "bits": [ 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320 ],
+          "bits": [ 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227 ],
           "attributes": {
             "src": "top_sampling.v:95|../adc_host.v:17"
           }
@@ -16130,7 +16201,7 @@
         },
         "adc_host_hi.newdata_SB_LUT4_I3_O": {
           "hide_name": 0,
-          "bits": [ 292 ],
+          "bits": [ 199 ],
           "attributes": {
             "src": "top_sampling.v:60"
           }
@@ -16144,7 +16215,7 @@
         },
         "adcdata": {
           "hide_name": 0,
-          "bits": [ 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320 ],
+          "bits": [ 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227 ],
           "attributes": {
             "src": "top_sampling.v:36"
           }
@@ -16164,7 +16235,7 @@
         },
         "addr": {
           "hide_name": 0,
-          "bits": [ 276, 274, 272, 270, 296, 290, 288, 286, 284, 282, 280, 278, 268, 266, 466, 467 ],
+          "bits": [ 183, 181, 179, 177, 203, 197, 195, 193, 191, 189, 187, 185, 175, 173, 466, 467 ],
           "attributes": {
             "src": "top_sampling.v:36",
             "unused_bits": "14 15"
@@ -16172,7 +16243,7 @@
         },
         "addr_adc": {
           "hide_name": 0,
-          "bits": [ 389, 391, 408, 407, 298, 293, 405, 403, 396, 394, 401, 400, 398, 301, 411, 468 ],
+          "bits": [ 389, 391, 408, 407, 205, 200, 405, 403, 396, 394, 401, 400, 398, 208, 411, 468 ],
           "attributes": {
             "src": "top_sampling.v:37",
             "unused_bits": "15"
@@ -16180,7 +16251,7 @@
         },
         "addr_adc_SB_LUT4_O_12_I3": {
           "hide_name": 0,
-          "bits": [ 269 ],
+          "bits": [ 176 ],
           "attributes": {
           }
         },
@@ -16192,7 +16263,7 @@
         },
         "addr_adc_SB_LUT4_O_13_I3": {
           "hide_name": 0,
-          "bits": [ 271 ],
+          "bits": [ 178 ],
           "attributes": {
           }
         },
@@ -16217,7 +16288,7 @@
         },
         "addr_adc_SB_LUT4_O_14_I3": {
           "hide_name": 0,
-          "bits": [ 273 ],
+          "bits": [ 180 ],
           "attributes": {
           }
         },
@@ -16229,7 +16300,7 @@
         },
         "addr_adc_SB_LUT4_O_1_I3": {
           "hide_name": 0,
-          "bits": [ 303 ],
+          "bits": [ 210 ],
           "attributes": {
           }
         },
@@ -16241,7 +16312,7 @@
         },
         "addr_adc_SB_LUT4_O_3_I3": {
           "hide_name": 0,
-          "bits": [ 267 ],
+          "bits": [ 174 ],
           "attributes": {
           }
         },
@@ -16253,7 +16324,7 @@
         },
         "addr_adc_SB_LUT4_O_4_I3": {
           "hide_name": 0,
-          "bits": [ 277 ],
+          "bits": [ 184 ],
           "attributes": {
           }
         },
@@ -16265,7 +16336,7 @@
         },
         "addr_adc_SB_LUT4_O_5_I3": {
           "hide_name": 0,
-          "bits": [ 279 ],
+          "bits": [ 186 ],
           "attributes": {
           }
         },
@@ -16283,7 +16354,7 @@
         },
         "addr_adc_SB_LUT4_O_6_I3": {
           "hide_name": 0,
-          "bits": [ 281 ],
+          "bits": [ 188 ],
           "attributes": {
           }
         },
@@ -16295,7 +16366,7 @@
         },
         "addr_adc_SB_LUT4_O_7_I3": {
           "hide_name": 0,
-          "bits": [ 283 ],
+          "bits": [ 190 ],
           "attributes": {
           }
         },
@@ -16307,7 +16378,7 @@
         },
         "addr_adc_SB_LUT4_O_8_I3": {
           "hide_name": 0,
-          "bits": [ 285 ],
+          "bits": [ 192 ],
           "attributes": {
           }
         },
@@ -16319,7 +16390,7 @@
         },
         "addr_adc_SB_LUT4_O_9_I3": {
           "hide_name": 0,
-          "bits": [ 287 ],
+          "bits": [ 194 ],
           "attributes": {
           }
         },
@@ -16337,7 +16408,7 @@
         },
         "addr_adc_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ 275, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483 ],
+          "bits": [ 182, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483 ],
           "attributes": {
             "src": "top_sampling.v:60",
             "unused_bits": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15"
@@ -16466,28 +16537,28 @@
         },
         "ramfull_SB_LUT4_I1_1_I3_SB_LUT4_I2_I3": {
           "hide_name": 0,
-          "bits": [ "0", 389, 390, 406, 299, 294, 404, 402, 395, 392, 393, 399, 397, 302, 409, 410 ],
+          "bits": [ "0", 389, 390, 406, 206, 201, 404, 402, 395, 392, 393, 399, 397, 209, 409, 410 ],
           "attributes": {
             "src": "top_sampling.v:74|/home/norman/anaconda3/bin/../share/yosys/ice40/arith_map.v:43"
           }
         },
         "ramfull_SB_LUT4_I1_1_O": {
           "hide_name": 0,
-          "bits": [ 180 ],
+          "bits": [ 242 ],
           "attributes": {
             "src": "top_sampling.v:117|../sram16x16.v:19"
           }
         },
         "ramfull_SB_LUT4_I1_O": {
           "hide_name": 0,
-          "bits": [ 177 ],
+          "bits": [ 241 ],
           "attributes": {
             "src": "top_sampling.v:117|../sram16x16.v:19"
           }
         },
         "ramfull_SB_LUT4_I3_O": {
           "hide_name": 0,
-          "bits": [ 264 ],
+          "bits": [ 171 ],
           "attributes": {
           }
         },
@@ -16528,7 +16599,7 @@
         },
         "wen": {
           "hide_name": 0,
-          "bits": [ 321 ],
+          "bits": [ 240 ],
           "attributes": {
             "src": "top_sampling.v:35"
           }
