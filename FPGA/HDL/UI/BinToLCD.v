@@ -1,15 +1,17 @@
 
 
 
+//This is a inefficient af, but I'm not gonna fix it :)
+
 module BinToLCD (
   input clk,
 
   input update,
 
-  input [31:0] X,
-  input [31:0] Y,
-  input [16:0] Mag,
-  input [16:0] Ang,
+  input [31:0] X_in,
+  input [31:0] Y_in,
+  input [16:0] Mag_in,
+  input [16:0] Ang_in,
   input ismagphase,
 
   output reg [7:0] dat=0,
@@ -27,6 +29,11 @@ module BinToLCD (
   reg[15:0] rest=0,lastacc=0,secondlastacc=0,AngelaMerkel=0;
   reg[3:0] dec=0;
 
+  reg [31:0] X;
+  reg [31:0] Y;
+  reg [16:0] Mag;
+  reg [16:0] Ang;
+
 
   reg[16:0] difference=0;
   reg holdoff=0;
@@ -35,7 +42,13 @@ module BinToLCD (
 
   always @ (posedge clk ) begin
     lastupdate<=update;
-    if(!lastupdate&&update) updating<=1;
+    if(!lastupdate&&update)begin
+      updating<=1;
+      X<=X_in;
+      Y<=Y_in;
+      Mag<=Mag_in;
+      Ang<=Ang_in;
+    end
 
     if(updating)begin
 

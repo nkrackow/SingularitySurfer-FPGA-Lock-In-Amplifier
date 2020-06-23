@@ -203,7 +203,7 @@ sigma_delta DAC2(
 
 sigma_delta DAC3(
   CLK36,
-  ({!sin[15],sin[14:0]}>>refamplset),
+  refIO ? 1'b0 : ({!sin[15],sin[14:0]}>>refamplset),
   REFOUT
   );
 
@@ -260,7 +260,7 @@ mult16x16 Mult2(
 RIIR X_IIR_1(
   sinmod,
   X,
-  {TC,1'b0},
+  {TC},
   newdata,
   CLK36
   );
@@ -270,7 +270,7 @@ RIIR X_IIR_1(
 RIIR Y_IIR_1(
   cosmod,
   Y,
-  {TC,1'b0},
+  {TC},
   newdata,
   CLK36
   );
