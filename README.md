@@ -61,6 +61,9 @@ Twor 16x16 hardware multipliers directly "mix" the incoming ADC samples with the
 This signal needs to be lowpass filtered to get rid of the undesired mixing products, ideally with a very low cutoff frequency (i.e. long time-constant). At ADC sampling speed this would require a lot of memory. But as the desired signal is bandlimited to a very low frequency (10s or 100s of Hz), a high sampling rate is unnecessary. A cascaded integrator comb (CIC) filter can downsample and lowpass filter the signal at the same time. Furthermore the cutoff frequency can easily be changed in powers of two and it doesn’t require hardware multipliers. 
 The downside is that the frequency response is far from an ideal lowpass. Fortunately in the case of the lock-in, this is not critical, as the cutoff frequencies are so low and the upper mixer output products are far higher than fc (it will just let more noise through which can be counteracted by a longer filter time constant). In fact right now, only a single IC stage is used in the SingularitySurfer, as there is already not enough memory for a second integrator. A good improvement would be to follow the CIC with an IIR filter using the remaining hardware multipliers.
 
+## *(update 2020)* Multiplier less IIR filter
+The SingularitySurfer was recently upgraded with a better lowpass using a very clever first order IIR filter. It uses the fact that you can multiply by a number close to 1 with bitshifting in hardware. E.g x*(15/16) can be accomplished via x-(x>>4). See [PYTHON_FILTER](https://github.com/SingularitySurfer/SingularitySurfer-FPGA-Lock-In-Amplifier/tree/master/PYTHON_FILTER) for a python demonstration.
+
 ## CORDIC:
 The CORDIC algorithm computes the angle and magnitude of the sine and cosine signals. The original core by Dale Dickard was extended to support full 360 degree rotation and modified to fit into the remaining ICE40 logic. 
 
