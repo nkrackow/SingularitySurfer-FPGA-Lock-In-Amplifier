@@ -31,7 +31,7 @@ All of the FPGA cores run at a 36MHz base clock and the numeric oscillator, DDS,
 The Lattice ICE40UP5K is an ideal platform for a small DSP project like this. It offers:
 * sufficient LUTs for all of the wiring, UI, display and housekeeping
 * 8 16x16 hardware multipliers for signal processing
-* 1Mbit of internal SRAM for storing a high fidelity sinus lookup table
+* 1Mbit of internal SRAM for storing a high fidelity sine lookup table
 * QFP package which is easily soldered by hand
 * affordable price at just 5€
 * fully open source toolchain!
@@ -69,7 +69,7 @@ The CORDIC algorithm computes the angle and magnitude of the sine and cosine sig
 
 ## Display and UI:
 The display allows direct monitoring of the Lock-In outputs and user interaction with the UI. The UI is controlled via four buttons on the side of the display. This way the user can navigate through the device settings:
-* Filter time constant: between 2^0 and 2^7 milliseconds
+* Filter time constant: between 2^0 and 2^15 milliseconds
 * PGA gain: 0dB, 20dB, 40dB, 60dB
 * Internal/external reference 
 * Internal reference frequency: 500Hz, 1kHz, 2kHz, 5kHz, 10kHz, 20kHz, 50 kHz, 100kHz
